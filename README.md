@@ -81,6 +81,7 @@
 - [AWS 백서 및 가이드](https://aws.amazon.com/whitepapers/)
 - [AWS 공식 교육 및 자격증](https://aws.amazon.com/training/)
 - [AWS 솔루션 아키텍트 공식 학습 가이드](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+- [용어집](glossary.md) - AWS SAA 학습에 필요한 주요 용어와 개념
 
 ## 🔄 학습 진행 방법
 
