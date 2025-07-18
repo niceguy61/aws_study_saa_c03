@@ -110,6 +110,7 @@
 - **강의**: 역할의 개념과 사용 시나리오 (임시 출입증)
 - **실습**: EC2 인스턴스용 역할 생성
 - **실습**: 역할 전환 실습
+- **📖 강의자료**: [01-iam-roles-advanced.md](day3/01-iam-roles-advanced.md)
 
 ### 🕘 10:30 - 10:45 | 휴식
 
@@ -117,6 +118,7 @@
 - **강의**: 여러 AWS 계정 간 리소스 공유
 - **실습**: 교차 계정 역할 설정 및 전환
 - **실습**: AWS STS(Security Token Service) 활용
+- **📖 강의자료**: [02-cross-account-access.md](day3/02-cross-account-access.md)
 
 ### 🕘 12:00 - 13:00 | 점심시간
 
@@ -124,6 +126,7 @@
 - **강의**: 다중 계정 관리 전략
 - **실습**: 조직 단위(OU) 생성 및 계정 관리
 - **실습**: 서비스 제어 정책(SCP) 적용
+- **📖 강의자료**: [03-aws-organizations.md](day3/03-aws-organizations.md)
 
 ### 🕘 14:30 - 14:45 | 휴식
 
@@ -131,6 +134,7 @@
 - **강의**: 외부 자격 증명 공급자와의 연동
 - **실습**: AWS SSO(Single Sign-On) 기본 설정
 - **사례**: 기업 Active Directory와 AWS 연동
+- **📖 강의자료**: [04-federation-sso.md](day3/04-federation-sso.md)
 
 ### 🕘 16:00 - 16:15 | 휴식
 
@@ -138,10 +142,12 @@
 - **강의**: CloudTrail을 통한 API 호출 추적
 - **실습**: IAM 액세스 분석기 활용
 - **실습**: 권한 경계(Permission Boundary) 설정
+- **📖 강의자료**: [05-iam-monitoring-audit.md](day3/05-iam-monitoring-audit.md)
 
 ### 🕘 17:30 - 18:00 | 일일 정리 & Q&A
 - **퀴즈**: IAM 고급 개념 확인 (15문항)
 - **과제**: 다중 계정 환경의 권한 설계
+- **정리**: Day 3 전체 내용 요약 및 내일 VPC 학습 준비
 
 ---
 
