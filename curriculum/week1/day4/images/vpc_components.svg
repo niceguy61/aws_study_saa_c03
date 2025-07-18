@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">VPC 주요 구성 요소</text>
+  
+  <!-- AWS 클라우드 -->
+  <rect x="50" y="80" width="700" height="480" rx="10" fill="#ffffff" stroke="#232f3e" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="120" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#232f3e">AWS 클라우드</text>
+  
+  <!-- VPC -->
+  <rect x="100" y="130" width="600" height="400" rx="10" fill="#E8F4FA" stroke="#147EBA" stroke-width="2"/>
+  <text x="150" y="160" font-family="Arial" font-size="18" font-weight="bold" fill="#147EBA">VPC (10.0.0.0/16)</text>
+  
+  <!-- 가용 영역 -->
+  <rect x="120" y="180" width="250" height="330" rx="5" fill="#F2F7F9" stroke="#147EBA" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="245" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#147EBA">가용 영역 A</text>
+  
+  <rect x="430" y="180" width="250" height="330" rx="5" fill="#F2F7F9" stroke="#147EBA" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="555" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#147EBA">가용 영역 B</text>
+  
+  <!-- 퍼블릭 서브넷 -->
+  <rect x="140" y="220" width="210" height="100" rx="5" fill="#C5E5F5" stroke="#147EBA" stroke-width="1"/>
+  <text x="245" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#147EBA">퍼블릭 서브넷</text>
+  <text x="245" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#147EBA">10.0.0.0/24</text>
+  
+  <rect x="450" y="220" width="210" height="100" rx="5" fill="#C5E5F5" stroke="#147EBA" stroke-width="1"/>
+  <text x="555" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#147EBA">퍼블릭 서브넷</text>
+  <text x="555" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#147EBA">10.0.1.0/24</text>
+  
+  <!-- 프라이빗 서브넷 -->
+  <rect x="140" y="340" width="210" height="100" rx="5" fill="#E9F5E9" stroke="#3B7A57" stroke-width="1"/>
+  <text x="245" y="360" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#3B7A57">프라이빗 서브넷</text>
+  <text x="245" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="#3B7A57">10.0.2.0/24</text>
+  
+  <rect x="450" y="340" width="210" height="100" rx="5" fill="#E9F5E9" stroke="#3B7A57" stroke-width="1"/>
+  <text x="555" y="360" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#3B7A57">프라이빗 서브넷</text>
+  <text x="555" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="#3B7A57">10.0.3.0/24</text>
+  
+  <!-- 인터넷 게이트웨이 -->
+  <rect x="370" y="80" width="60" height="60" rx="5" fill="#FF9900" stroke="#E05243" stroke-width="1"/>
+  <text x="400" y="115" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">IGW</text>
+  
+  <!-- NAT 게이트웨이 -->
+  <rect x="180" y="250" width="50" height="50" rx="5" fill="#FF9900" stroke="#E05243" stroke-width="1"/>
+  <text x="205" y="280" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">NAT</text>
+  
+  <rect x="490" y="250" width="50" height="50" rx="5" fill="#FF9900" stroke="#E05243" stroke-width="1"/>
+  <text x="515" y="280" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">NAT</text>
+  
+  <!-- EC2 인스턴스 -->
+  <rect x="260" y="250" width="50" height="50" rx="5" fill="#D86613" stroke="#E05243" stroke-width="1"/>
+  <text x="285" y="280" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">EC2</text>
+  
+  <rect x="570" y="250" width="50" height="50" rx="5" fill="#D86613" stroke="#E05243" stroke-width="1"/>
+  <text x="595" y="280" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">EC2</text>
+  
+  <rect x="180" y="370" width="50" height="50" rx="5" fill="#D86613" stroke="#E05243" stroke-width="1"/>
+  <text x="205" y="400" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">EC2</text>
+  
+  <rect x="490" y="370" width="50" height="50" rx="5" fill="#D86613" stroke="#E05243" stroke-width="1"/>
+  <text x="515" y="400" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">EC2</text>
+  
+  <!-- 라우팅 테이블 -->
+  <rect x="260" y="370" width="50" height="50" rx="5" fill="#BDDDF4" stroke="#147EBA" stroke-width="1"/>
+  <text x="285" y="400" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#147EBA">RT</text>
+  
+  <rect x="570" y="370" width="50" height="50" rx="5" fill="#BDDDF4" stroke="#147EBA" stroke-width="1"/>
+  <text x="595" y="400" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#147EBA">RT</text>
+  
+  <!-- 인터넷 -->
+  <ellipse cx="400" cy="30" rx="60" ry="20" fill="#7AA5D2" stroke="#147EBA" stroke-width="1"/>
+  <text x="400" y="35" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">인터넷</text>
+  
+  <!-- 연결선 -->
+  <!-- 인터넷 <-> IGW -->
+  <line x1="400" y1="50" x2="400" y2="80" stroke="#232f3e" stroke-width="2"/>
+  
+  <!-- IGW <-> VPC -->
+  <line x1="400" y1="140" x2="400" y2="180" stroke="#232f3e" stroke-width="2"/>
+  
+  <!-- IGW <-> 퍼블릭 서브넷 -->
+  <line x1="370" y1="110" x2="245" y2="220" stroke="#232f3e" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="430" y1="110" x2="555" y2="220" stroke="#232f3e" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- NAT <-> EC2 (프라이빗) -->
+  <line x1="205" y1="300" x2="205" y2="370" stroke="#232f3e" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="515" y1="300" x2="515" y2="370" stroke="#232f3e" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- 범례 -->
+  <rect x="100" y="520" width="600" height="30" rx="5" fill="#ffffff" stroke="#232f3e" stroke-width="1"/>
+  <text x="400" y="540" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#232f3e">IGW: 인터넷 게이트웨이, NAT: NAT 게이트웨이, EC2: EC2 인스턴스, RT: 라우팅 테이블</text>
+</svg>

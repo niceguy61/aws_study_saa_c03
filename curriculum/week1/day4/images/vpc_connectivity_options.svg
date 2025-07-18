@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">VPC 연결 옵션</text>
+  
+  <!-- AWS 클라우드 -->
+  <rect x="50" y="80" width="700" height="400" rx="10" fill="#ffffff" stroke="#232f3e" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="120" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#232f3e">AWS 클라우드</text>
+  
+  <!-- VPC 1 -->
+  <rect x="100" y="130" width="200" height="150" rx="5" fill="#E8F4FA" stroke="#147EBA" stroke-width="2"/>
+  <text x="200" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#147EBA">VPC 1</text>
+  <text x="200" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#147EBA">10.0.0.0/16</text>
+  
+  <!-- VPC 2 -->
+  <rect x="500" y="130" width="200" height="150" rx="5" fill="#E8F4FA" stroke="#147EBA" stroke-width="2"/>
+  <text x="600" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#147EBA">VPC 2</text>
+  <text x="600" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#147EBA">172.16.0.0/16</text>
+  
+  <!-- VPC 3 -->
+  <rect x="100" y="310" width="200" height="150" rx="5" fill="#E8F4FA" stroke="#147EBA" stroke-width="2"/>
+  <text x="200" y="330" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#147EBA">VPC 3</text>
+  <text x="200" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#147EBA">192.168.0.0/16</text>
+  
+  <!-- 온프레미스 데이터 센터 -->
+  <rect x="500" y="310" width="200" height="150" rx="5" fill="#F9E8FA" stroke="#9B4F96" stroke-width="2"/>
+  <text x="600" y="330" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#9B4F96">온프레미스</text>
+  <text x="600" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#9B4F96">데이터 센터</text>
+  
+  <!-- VPC 피어링 -->
+  <line x1="300" y1="180" x2="500" y2="180" stroke="#147EBA" stroke-width="2"/>
+  <text x="400" y="170" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#147EBA">VPC 피어링</text>
+  
+  <!-- Transit Gateway -->
+  <circle cx="400" cy="250" r="40" fill="#FF9900" stroke="#E05243" stroke-width="2"/>
+  <text x="400" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#232f3e">Transit</text>
+  <text x="400" y="275" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#232f3e">Gateway</text>
+  
+  <!-- Transit Gateway 연결 -->
+  <line x1="200" y1="280" x2="370" y2="250" stroke="#E05243" stroke-width="2"/>
+  <line x1="600" y1="280" x2="430" y2="250" stroke="#E05243" stroke-width="2"/>
+  <line x1="200" y1="310" x2="370" y2="270" stroke="#E05243" stroke-width="2"/>
+  <line x1="600" y1="310" x2="430" y2="270" stroke="#E05243" stroke-width="2"/>
+  
+  <!-- VPN 연결 -->
+  <line x1="600" y1="460" x2="600" y2="500" stroke="#9B4F96" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="600" y="480" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#9B4F96">VPN 연결</text>
+  
+  <!-- Direct Connect -->
+  <line x1="500" y1="385" x2="450" y2="385" stroke="#9B4F96" stroke-width="4"/>
+  <text x="470" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#9B4F96">Direct Connect</text>
+  
+  <!-- VPC 엔드포인트 -->
+  <rect x="150" y="200" width="100" height="40" rx="5" fill="#BDDDF4" stroke="#147EBA" stroke-width="1"/>
+  <text x="200" y="225" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#147EBA">VPC 엔드포인트</text>
+  
+  <!-- AWS 서비스 -->
+  <rect x="150" y="500" width="100" height="40" rx="5" fill="#C5E5F5" stroke="#147EBA" stroke-width="1"/>
+  <text x="200" y="525" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#147EBA">AWS 서비스</text>
+  
+  <!-- VPC 엔드포인트 연결 -->
+  <line x1="200" y1="240" x2="200" y2="500" stroke="#147EBA" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- 인터넷 -->
+  <ellipse cx="400" cy="550" rx="100" ry="30" fill="#7AA5D2" stroke="#147EBA" stroke-width="1"/>
+  <text x="400" y="555" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">인터넷</text>
+  
+  <!-- 인터넷 게이트웨이 -->
+  <rect x="370" y="500" width="60" height="30" rx="5" fill="#FF9900" stroke="#E05243" stroke-width="1"/>
+  <text x="400" y="520" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#232f3e">IGW</text>
+  
+  <!-- IGW 연결 -->
+  <line x1="400" y1="500" x2="400" y2="480" stroke="#E05243" stroke-width="2"/>
+  <line x1="400" y1="530" x2="400" y2="520" stroke="#E05243" stroke-width="2"/>
+</svg>

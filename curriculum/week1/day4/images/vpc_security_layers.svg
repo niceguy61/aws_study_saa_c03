@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">VPC 보안 계층</text>
+  
+  <!-- VPC -->
+  <rect x="100" y="80" width="600" height="400" rx="10" fill="#E8F4FA" stroke="#147EBA" stroke-width="2"/>
+  <text x="150" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#147EBA">VPC (10.0.0.0/16)</text>
+  
+  <!-- 서브넷 -->
+  <rect x="150" y="130" width="500" height="300" rx="5" fill="#C5E5F5" stroke="#147EBA" stroke-width="1"/>
+  <text x="200" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#147EBA">서브넷 (10.0.0.0/24)</text>
+  
+  <!-- 네트워크 ACL -->
+  <rect x="180" y="170" width="440" height="240" rx="5" fill="#FFE0B2" stroke="#ED7331" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="300" y="190" font-family="Arial" font-size="16" font-weight="bold" fill="#ED7331">네트워크 ACL (상태 비저장)</text>
+  
+  <!-- 보안 그룹 -->
+  <rect x="220" y="210" width="360" height="180" rx="5" fill="#FFCDD2" stroke="#D32F2F" stroke-width="2"/>
+  <text x="300" y="230" font-family="Arial" font-size="16" font-weight="bold" fill="#D32F2F">보안 그룹 (상태 저장)</text>
+  
+  <!-- EC2 인스턴스 -->
+  <rect x="280" y="260" width="240" height="100" rx="5" fill="#D86613" stroke="#E05243" stroke-width="1"/>
+  <text x="400" y="290" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#232f3e">EC2 인스턴스</text>
+  <text x="400" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#232f3e">OS 방화벽</text>
+  
+  <!-- 보안 계층 설명 -->
+  <rect x="100" y="500" width="600" height="80" rx="5" fill="#ffffff" stroke="#232f3e" stroke-width="1"/>
+  <text x="400" y="520" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#232f3e">VPC 보안 계층 비교</text>
+  <text x="250" y="545" font-family="Arial" font-size="14" text-anchor="middle" fill="#ED7331">네트워크 ACL: 서브넷 수준, 상태 비저장, 허용/거부 규칙</text>
+  <text x="550" y="545" font-family="Arial" font-size="14" text-anchor="middle" fill="#D32F2F">보안 그룹: 인스턴스 수준, 상태 저장, 허용 규칙만</text>
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle" fill="#232f3e">심층 방어를 위해 두 계층 모두 활용</text>
+</svg>
