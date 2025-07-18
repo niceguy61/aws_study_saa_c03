@@ -8,12 +8,17 @@
 - AWS의 데이터 보안 및 암호화 서비스 활용 방법 이해
 - AWS Solutions Architect Associate 자격증 시험 등록 방법 학습
 
+## 오리엔테이션
+- [과정 오리엔테이션 자료](./day1/orientation.md) - 전체 과정 소개 및 학습 방법 안내
+
 ## 주간 시간표
 - [1주차 상세 시간표](./timetable.md) - 매일 09:00-18:00 수업 일정 및 세부 시간 계획
+- [과정 오리엔테이션](./day1/orientation.md) - 과정 소개 및 학습 가이드
 
 ## 주간 일정
 
 ### 월요일: 클라우드 컴퓨팅 기초 및 AWS 소개
+- [과정 오리엔테이션](./day1/orientation.md) - 과정 소개 및 학습 방법 안내
 - [클라우드 컴퓨팅 개념 및 발전 과정](./day1/cloud_computing_basics.md)
 - [클라우드 서비스 모델 및 배포 모델](./day1/cloud_service_models.md)
 - [AWS 소개 및 주요 서비스 개요](./day1/aws_introduction.md)
