@@ -81,7 +81,7 @@
 | 14:00 - 14:15 | 휴식 | - | - |
 | 14:15 - 15:45 | 실습: 데이터 암호화 및 보안 구성 | 실습 | [실습 가이드](./day5/lab_data_encryption.md) |
 | 15:45 - 16:00 | 휴식 | - | - |
-| 16:00 - 17:00 | 주간 복습 및 퀴즈 | 평가 | [퀴즈 자료](./day5/weekly_review.md) |
+| 16:00 - 17:00 | 주간 복습 및 퀴즈 | 평가 | [주간 복습](./day5/weekly_review.md), [연습 문제](./day5/practice_questions.md) |
 | 17:00 - 18:00 | 주간 과제 설명 및 Q&A | 토론 | [과제 안내](./assignments/aws_account_security.md) |
 
 ## 주간 과제
