@@ -1,0 +1,67 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 온프레미스 섹션 -->
+  <rect x="20" y="20" width="360" height="360" fill="#f8f9fa" stroke="#6c757d" stroke-width="2" rx="10"/>
+  <text x="200" y="50" text-anchor="middle" font-size="18" font-weight="bold" fill="#495057">온프레미스 (자가용)</text>
+  
+  <!-- 서버 아이콘 -->
+  <rect x="50" y="80" width="40" height="60" fill="#6c757d" rx="5"/>
+  <rect x="55" y="85" width="30" height="8" fill="#28a745" rx="2"/>
+  <rect x="55" y="95" width="30" height="8" fill="#ffc107" rx="2"/>
+  <rect x="55" y="105" width="30" height="8" fill="#dc3545" rx="2"/>
+  <text x="110" y="100" font-size="12" fill="#495057">초기 투자 큰 비용</text>
+  <text x="110" y="115" font-size="12" fill="#495057">서버 구매 필요</text>
+  
+  <!-- 관리 인력 -->
+  <circle cx="70" cy="180" r="20" fill="#007bff"/>
+  <circle cx="70" cy="170" r="8" fill="#ffffff"/>
+  <text x="110" y="185" font-size="12" fill="#495057">24시간 관리 인력</text>
+  
+  <!-- 유지보수 -->
+  <rect x="50" y="220" width="40" height="30" fill="#ffc107" rx="5"/>
+  <text x="55" y="240" font-size="10" fill="#000">🔧</text>
+  <text x="110" y="240" font-size="12" fill="#495057">하드웨어 교체</text>
+  <text x="110" y="255" font-size="12" fill="#495057">소프트웨어 업데이트</text>
+  
+  <!-- 확장성 제한 -->
+  <rect x="50" y="280" width="40" height="40" fill="#dc3545" rx="5"/>
+  <text x="55" y="305" font-size="16" fill="#fff">📊</text>
+  <text x="110" y="305" font-size="12" fill="#495057">미리 용량 계획</text>
+  <text x="110" y="320" font-size="12" fill="#495057">확장 시간 오래 걸림</text>
+  
+  <!-- 클라우드 섹션 -->
+  <rect x="420" y="20" width="360" height="360" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="10"/>
+  <text x="600" y="50" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976d2">클라우드 (택시)</text>
+  
+  <!-- 클라우드 아이콘 -->
+  <ellipse cx="470" cy="100" rx="25" ry="15" fill="#2196f3"/>
+  <ellipse cx="485" cy="90" rx="20" ry="12" fill="#64b5f6"/>
+  <ellipse cx="500" cy="100" rx="25" ry="15" fill="#42a5f5"/>
+  <text x="530" y="100" font-size="12" fill="#1976d2">사용한 만큼만 지불</text>
+  <text x="530" y="115" font-size="12" fill="#1976d2">초기 투자 최소화</text>
+  
+  <!-- AWS 관리 -->
+  <circle cx="470" cy="180" r="20" fill="#4caf50"/>
+  <text x="475" y="185" font-size="12" fill="#fff">AWS</text>
+  <text x="510" y="185" font-size="12" fill="#1976d2">AWS가 인프라 관리</text>
+  
+  <!-- 자동 업데이트 -->
+  <rect x="450" y="220" width="40" height="30" fill="#4caf50" rx="5"/>
+  <text x="455" y="240" font-size="10" fill="#fff">🔄</text>
+  <text x="510" y="240" font-size="12" fill="#1976d2">자동 업데이트</text>
+  <text x="510" y="255" font-size="12" fill="#1976d2">최신 기술 적용</text>
+  
+  <!-- 탄력적 확장 -->
+  <rect x="450" y="280" width="40" height="40" fill="#ff9800" rx="5"/>
+  <text x="455" y="305" font-size="16" fill="#fff">⚡</text>
+  <text x="510" y="305" font-size="12" fill="#1976d2">즉시 확장/축소</text>
+  <text x="510" y="320" font-size="12" fill="#1976d2">탄력적 운영</text>
+  
+  <!-- 화살표 -->
+  <path d="M 380 200 L 420 200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  <text x="400" y="190" text-anchor="middle" font-size="12" fill="#666">전환</text>
+</svg>

@@ -49,6 +49,8 @@ Week 4: 집중 문제풀이
 
 ### 온프레미스 vs 클라우드 비교
 
+![On-premise vs Cloud](../images/onpremise-vs-cloud.svg)
+
 #### 온프레미스 (자가용)
 ```
 초기 투자: 서버 구매 (수천만원)
@@ -131,6 +133,8 @@ Week 4: 집중 문제풀이
 ---
 
 ## 🌐 클라우드 서비스 모델
+
+![Cloud Service Models](../images/cloud-service-models.svg)
 
 ### IaaS (Infrastructure as a Service)
 - **제공**: 가상 서버, 스토리지, 네트워크

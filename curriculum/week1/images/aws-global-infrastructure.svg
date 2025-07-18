@@ -1,0 +1,119 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="450" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#343a40">AWS 글로벌 인프라</text>
+  
+  <!-- 리전 1: 서울 -->
+  <rect x="50" y="80" width="250" height="200" fill="#e3f2fd" stroke="#2196f3" stroke-width="3" rx="15"/>
+  <text x="175" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">서울 리전 (ap-northeast-2)</text>
+  
+  <!-- 서울 AZ들 -->
+  <rect x="70" y="130" width="60" height="60" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="100" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">AZ-a</text>
+  <text x="100" y="170" text-anchor="middle" font-size="8" fill="#0d47a1">강남구</text>
+  
+  <rect x="145" y="130" width="60" height="60" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="175" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">AZ-b</text>
+  <text x="175" y="170" text-anchor="middle" font-size="8" fill="#0d47a1">서초구</text>
+  
+  <rect x="220" y="130" width="60" height="60" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="250" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">AZ-c</text>
+  <text x="250" y="170" text-anchor="middle" font-size="8" fill="#0d47a1">송파구</text>
+  
+  <!-- 서울 특징 -->
+  <text x="175" y="220" text-anchor="middle" font-size="12" fill="#1976d2">• 3개 가용영역</text>
+  <text x="175" y="240" text-anchor="middle" font-size="12" fill="#1976d2">• 물리적 분리</text>
+  <text x="175" y="260" text-anchor="middle" font-size="12" fill="#1976d2">• 고속 네트워크 연결</text>
+  
+  <!-- 리전 2: 도쿄 -->
+  <rect x="350" y="80" width="250" height="200" fill="#e8f5e8" stroke="#4caf50" stroke-width="3" rx="15"/>
+  <text x="475" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#2e7d32">도쿄 리전 (ap-northeast-1)</text>
+  
+  <!-- 도쿄 AZ들 -->
+  <rect x="370" y="130" width="60" height="60" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2" rx="8"/>
+  <text x="400" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">AZ-a</text>
+  <text x="400" y="170" text-anchor="middle" font-size="8" fill="#1b5e20">시부야</text>
+  
+  <rect x="445" y="130" width="60" height="60" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2" rx="8"/>
+  <text x="475" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">AZ-b</text>
+  <text x="475" y="170" text-anchor="middle" font-size="8" fill="#1b5e20">신주쿠</text>
+  
+  <rect x="520" y="130" width="60" height="60" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2" rx="8"/>
+  <text x="550" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">AZ-c</text>
+  <text x="550" y="170" text-anchor="middle" font-size="8" fill="#1b5e20">하라주쿠</text>
+  
+  <!-- 도쿄 특징 -->
+  <text x="475" y="220" text-anchor="middle" font-size="12" fill="#2e7d32">• 가장 많은 서비스</text>
+  <text x="475" y="240" text-anchor="middle" font-size="12" fill="#2e7d32">• 최신 기능 우선 제공</text>
+  <text x="475" y="260" text-anchor="middle" font-size="12" fill="#2e7d32">• 아시아 허브 역할</text>
+  
+  <!-- 리전 3: 버지니아 -->
+  <rect x="650" y="80" width="200" height="200" fill="#fff3e0" stroke="#ff9800" stroke-width="3" rx="15"/>
+  <text x="750" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#e65100">버지니아 북부</text>
+  <text x="750" y="130" text-anchor="middle" font-size="14" fill="#e65100">(us-east-1)</text>
+  
+  <!-- 버지니아 AZ들 -->
+  <rect x="670" y="150" width="40" height="40" fill="#ffcc02" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="690" y="175" text-anchor="middle" font-size="8" font-weight="bold" fill="#bf360c">AZ-a</text>
+  
+  <rect x="720" y="150" width="40" height="40" fill="#ffcc02" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="740" y="175" text-anchor="middle" font-size="8" font-weight="bold" fill="#bf360c">AZ-b</text>
+  
+  <rect x="770" y="150" width="40" height="40" fill="#ffcc02" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="790" y="175" text-anchor="middle" font-size="8" font-weight="bold" fill="#bf360c">AZ-c</text>
+  
+  <!-- 버지니아 특징 -->
+  <text x="750" y="220" text-anchor="middle" font-size="12" fill="#e65100">• AWS 본사</text>
+  <text x="750" y="240" text-anchor="middle" font-size="12" fill="#e65100">• 가장 저렴</text>
+  <text x="750" y="260" text-anchor="middle" font-size="12" fill="#e65100">• 글로벌 서비스</text>
+  
+  <!-- 엣지 로케이션 섹션 -->
+  <rect x="50" y="320" width="800" height="150" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="10"/>
+  <text x="450" y="350" text-anchor="middle" font-size="18" font-weight="bold" fill="#6a1b9a">엣지 로케이션 (Edge Locations)</text>
+  
+  <!-- 엣지 로케이션들 -->
+  <circle cx="150" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="150" y="385" text-anchor="middle" font-size="8" fill="#4a148c">서울</text>
+  
+  <circle cx="250" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="250" y="385" text-anchor="middle" font-size="8" fill="#4a148c">도쿄</text>
+  
+  <circle cx="350" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="350" y="385" text-anchor="middle" font-size="8" fill="#4a148c">싱가포르</text>
+  
+  <circle cx="450" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="450" y="385" text-anchor="middle" font-size="8" fill="#4a148c">뉴욕</text>
+  
+  <circle cx="550" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="550" y="385" text-anchor="middle" font-size="8" fill="#4a148c">런던</text>
+  
+  <circle cx="650" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="650" y="385" text-anchor="middle" font-size="8" fill="#4a148c">파리</text>
+  
+  <circle cx="750" cy="380" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="750" y="385" text-anchor="middle" font-size="8" fill="#4a148c">시드니</text>
+  
+  <!-- 엣지 로케이션 설명 -->
+  <text x="450" y="420" text-anchor="middle" font-size="14" fill="#6a1b9a">전 세계 400+ 지점에서 콘텐츠 캐싱</text>
+  <text x="450" y="440" text-anchor="middle" font-size="12" fill="#6a1b9a">CloudFront CDN • Route 53 DNS • 빠른 콘텐츠 전송</text>
+  
+  <!-- 연결선들 -->
+  <path d="M 175 280 Q 200 300 225 320" stroke="#9c27b0" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 475 280 Q 450 300 425 320" stroke="#9c27b0" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 750 280 Q 700 300 650 320" stroke="#9c27b0" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- 범례 -->
+  <rect x="50" y="500" width="800" height="80" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="450" y="525" text-anchor="middle" font-size="16" font-weight="bold" fill="#343a40">AWS 인프라 구성 요소</text>
+  
+  <rect x="80" y="540" width="15" height="15" fill="#2196f3"/>
+  <text x="105" y="552" font-size="12" fill="#343a40">리전 (Region): 지리적으로 분리된 데이터센터 집합</text>
+  
+  <rect x="350" y="540" width="15" height="15" fill="#bbdefb"/>
+  <text x="375" y="552" font-size="12" fill="#343a40">가용영역 (AZ): 물리적으로 분리된 데이터센터</text>
+  
+  <circle cx="650" cy="547" r="7" fill="#e1bee7"/>
+  <text x="665" y="552" font-size="12" fill="#343a40">엣지 로케이션: 콘텐츠 캐싱 지점</text>
+</svg>
