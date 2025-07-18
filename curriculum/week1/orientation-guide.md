@@ -137,9 +137,9 @@
 - **추가 자료**: AWS 공식 문서 및 백서 안내
 
 #### 연락처 정보
-- **강사 이메일**: [instructor-email]
-- **카카오톡 오픈채팅**: [chat-room-link]
-- **GitHub 저장소**: [repository-link]
+- **강사 이메일**: niceguy61@naver.com
+- **카카오톡 오픈채팅**: [niceguy61](https://open.kakao.com/me/niceguy61)
+- **GitHub 저장소**: [repository-link](https://github.com/niceguy61)
 
 ---
 
