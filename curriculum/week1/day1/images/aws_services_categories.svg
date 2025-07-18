@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">AWS 주요 서비스 카테고리</text>
+  
+  <!-- AWS 로고 스타일 아이콘 -->
+  <rect x="370" y="60" width="60" height="60" rx="5" fill="#232f3e"/>
+  <text x="400" y="100" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#ff9900">AWS</text>
+  
+  <!-- 서비스 카테고리 - 컴퓨팅 -->
+  <rect x="100" y="150" width="250" height="120" rx="10" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="225" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1976d2">컴퓨팅 서비스</text>
+  <text x="225" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976d2">EC2, Lambda, ECS, EKS</text>
+  <text x="225" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976d2">Fargate, Batch, Lightsail</text>
+  <text x="225" y="260" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#1976d2">비유: 다양한 종류의 자동차</text>
+  
+  <!-- 서비스 카테고리 - 스토리지 -->
+  <rect x="450" y="150" width="250" height="120" rx="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="575" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#388e3c">스토리지 서비스</text>
+  <text x="575" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#388e3c">S3, EBS, EFS, Glacier</text>
+  <text x="575" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#388e3c">Storage Gateway, Snow Family</text>
+  <text x="575" y="260" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#388e3c">비유: 다양한 종류의 창고</text>
+  
+  <!-- 서비스 카테고리 - 데이터베이스 -->
+  <rect x="100" y="300" width="250" height="120" rx="10" fill="#ffecb3" stroke="#ffa000" stroke-width="2"/>
+  <text x="225" y="330" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffa000">데이터베이스 서비스</text>
+  <text x="225" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffa000">RDS, DynamoDB, Aurora</text>
+  <text x="225" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffa000">Redshift, ElastiCache, Neptune</text>
+  <text x="225" y="410" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#ffa000">비유: 다양한 종류의 도서관</text>
+  
+  <!-- 서비스 카테고리 - 네트워킹 -->
+  <rect x="450" y="300" width="250" height="120" rx="10" fill="#e1bee7" stroke="#8e24aa" stroke-width="2"/>
+  <text x="575" y="330" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#8e24aa">네트워킹 서비스</text>
+  <text x="575" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="#8e24aa">VPC, Route 53, CloudFront</text>
+  <text x="575" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#8e24aa">ELB, Direct Connect</text>
+  <text x="575" y="410" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#8e24aa">비유: 도로 시스템</text>
+  
+  <!-- 서비스 카테고리 - 보안 -->
+  <rect x="100" y="450" width="250" height="120" rx="10" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2"/>
+  <text x="225" y="480" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#d32f2f">보안 서비스</text>
+  <text x="225" y="510" font-family="Arial" font-size="14" text-anchor="middle" fill="#d32f2f">IAM, Organizations, Cognito</text>
+  <text x="225" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="#d32f2f">Shield, KMS, WAF</text>
+  <text x="225" y="560" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#d32f2f">비유: 건물 보안 시스템</text>
+  
+  <!-- 서비스 카테고리 - 관리 -->
+  <rect x="450" y="450" width="250" height="120" rx="10" fill="#b3e5fc" stroke="#0288d1" stroke-width="2"/>
+  <text x="575" y="480" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0288d1">관리 및 거버넌스</text>
+  <text x="575" y="510" font-family="Arial" font-size="14" text-anchor="middle" fill="#0288d1">CloudWatch, CloudTrail</text>
+  <text x="575" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="#0288d1">Trusted Advisor, Cost Explorer</text>
+  <text x="575" y="560" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#0288d1">비유: 건물 관리 시스템</text>
+</svg>

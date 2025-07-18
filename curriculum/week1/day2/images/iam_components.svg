@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">IAM 핵심 구성 요소</text>
+  
+  <!-- IAM 로고 스타일 아이콘 -->
+  <rect x="370" y="60" width="60" height="60" rx="5" fill="#ff9900"/>
+  <text x="400" y="100" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">IAM</text>
+  
+  <!-- 중앙 원 -->
+  <circle cx="400" cy="300" r="100" fill="#ffffff" stroke="#232f3e" stroke-width="2"/>
+  <text x="400" y="300" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#232f3e">AWS 리소스</text>
+  <text x="400" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#232f3e">EC2, S3, DynamoDB, ...</text>
+  
+  <!-- 사용자 -->
+  <circle cx="200" y="200" r="60" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <circle cx="200" y="170" r="20" fill="#ffffff" stroke="none"/>
+  <path d="M170,220 Q200,250 230,220" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <text x="200" y="280" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1976d2">IAM 사용자</text>
+  <line x1="260" y1="200" x2="300" y2="300" stroke="#1976d2" stroke-width="2"/>
+  
+  <!-- 그룹 -->
+  <rect x="100" y="400" width="120" height="80" rx="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="160" y="445" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#388e3c">IAM 그룹</text>
+  <line x1="220" y1="400" x2="300" y2="350" stroke="#388e3c" stroke-width="2"/>
+  
+  <!-- 역할 -->
+  <polygon points="600,200 650,230 600,260 550,230" fill="#ffecb3" stroke="#ffa000" stroke-width="2"/>
+  <text x="600" y="235" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffa000">IAM 역할</text>
+  <line x1="550" y1="230" x2="500" y2="300" stroke="#ffa000" stroke-width="2"/>
+  
+  <!-- 정책 -->
+  <rect x="550" y="400" width="120" height="80" rx="10" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2"/>
+  <text x="610" y="430" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">IAM 정책</text>
+  <text x="610" y="450" font-family="Arial" font-size="12" text-anchor="middle" fill="#d32f2f">JSON 문서</text>
+  <line x1="550" y1="400" x2="500" y2="350" stroke="#d32f2f" stroke-width="2"/>
+  
+  <!-- 설명 텍스트 -->
+  <text x="200" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">AWS와 상호작용하는</text>
+  <text x="200" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">개인 또는 서비스</text>
+  
+  <text x="160" y="480" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">사용자 모음</text>
+  <text x="160" y="495" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">권한 관리 간소화</text>
+  
+  <text x="600" y="280" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">임시 자격 증명</text>
+  <text x="600" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">권한 위임</text>
+  
+  <text x="610" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">권한 정의</text>
+  <text x="610" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#232f3e">허용/거부 규칙</text>
+  
+  <!-- 정책 예시 -->
+  <rect x="550" y="500" width="200" height="80" rx="5" fill="#ffffff" stroke="#d32f2f" stroke-width="1"/>
+  <text x="560" y="515" font-family="Courier New" font-size="10" text-anchor="start" fill="#232f3e">{</text>
+  <text x="570" y="530" font-family="Courier New" font-size="10" text-anchor="start" fill="#232f3e">"Effect": "Allow",</text>
+  <text x="570" y="545" font-family="Courier New" font-size="10" text-anchor="start" fill="#232f3e">"Action": "s3:GetObject",</text>
+  <text x="570" y="560" font-family="Courier New" font-size="10" text-anchor="start" fill="#232f3e">"Resource": "arn:aws:s3:::*"</text>
+  <text x="560" y="575" font-family="Courier New", font-size="10" text-anchor="start" fill="#232f3e">}</text>
+</svg>

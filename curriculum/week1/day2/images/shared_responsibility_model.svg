@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">AWS 공동 책임 모델</text>
+  
+  <!-- 책임 구분선 -->
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#232f3e" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="400" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#232f3e">책임 경계</text>
+  
+  <!-- AWS 책임 영역 -->
+  <rect x="100" y="330" width="600" height="220" rx="10" fill="#ff9900" opacity="0.2" stroke="#ff9900" stroke-width="2"/>
+  <text x="400" y="360" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#232f3e">AWS의 책임: 클라우드의 보안</text>
+  <text x="400" y="390" font-family="Arial" font-size="16" text-anchor="middle" fill="#232f3e">"Security OF the Cloud"</text>
+  
+  <!-- AWS 책임 항목 -->
+  <text x="150" y="430" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 물리적 데이터 센터 보안</text>
+  <text x="150" y="460" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 하드웨어 및 네트워크 인프라</text>
+  <text x="150" y="490" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 가상화 계층</text>
+  <text x="150" y="520" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 호스트 운영체제</text>
+  
+  <text x="450" y="430" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• AWS 서비스 자체의 보안</text>
+  <text x="450" y="460" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 소프트웨어 업데이트 및 패치</text>
+  <text x="450" y="490" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 글로벌 인프라</text>
+  <text x="450" y="520" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 규정 준수 프로그램</text>
+  
+  <!-- 고객 책임 영역 -->
+  <rect x="100" y="70" width="600" height="220" rx="10" fill="#4a90e2" opacity="0.2" stroke="#4a90e2" stroke-width="2"/>
+  <text x="400" y="100" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#232f3e">고객의 책임: 클라우드 내 보안</text>
+  <text x="400" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="#232f3e">"Security IN the Cloud"</text>
+  
+  <!-- 고객 책임 항목 -->
+  <text x="150" y="170" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 고객 데이터</text>
+  <text x="150" y="200" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 플랫폼, 애플리케이션</text>
+  <text x="150" y="230" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• ID 및 액세스 관리</text>
+  <text x="150" y="260" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 운영 체제 구성</text>
+  
+  <text x="450" y="170" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 네트워크 구성</text>
+  <text x="450" y="200" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 방화벽 구성</text>
+  <text x="450" y="230" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 클라이언트 측 데이터 암호화</text>
+  <text x="450" y="260" font-family="Arial" font-size="14" text-anchor="start" fill="#232f3e">• 서버 측 암호화</text>
+  
+  <!-- 비유 설명 -->
+  <rect x="100" y="560" width="600" height="30" rx="15" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
+  <text x="400" y="580" font-family="Arial" font-size="14" text-anchor="middle" fill="#388e3c">비유: 아파트 건물(AWS)과 입주자(고객)의 보안 책임 관계</text>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#232f3e">AWS 계정 생성 및 기본 설정</text>
+  
+  <!-- 단계별 프로세스 -->
+  <!-- 1단계: 계정 생성 -->
+  <rect x="50" y="80" width="700" height="80" rx="10" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="400" y="120" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1976d2">1단계: AWS 계정 생성</text>
+  <text x="400" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976d2">이메일, 개인정보, 결제정보 입력 및 전화번호 인증</text>
+  
+  <!-- 2단계: 보안 강화 -->
+  <rect x="50" y="180" width="700" height="80" rx="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="400" y="220" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#388e3c">2단계: 루트 사용자 보안 강화</text>
+  <text x="400" y="245" font-family="Arial" font-size="14" text-anchor="middle" fill="#388e3c">다중 인증(MFA) 설정 및 계정 연락처 정보 확인</text>
+  
+  <!-- 3단계: 결제 알림 -->
+  <rect x="50" y="280" width="700" height="80" rx="10" fill="#ffecb3" stroke="#ffa000" stroke-width="2"/>
+  <text x="400" y="320" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffa000">3단계: 결제 알림 설정</text>
+  <text x="400" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffa000">예산 생성, 알림 설정, 비용 탐색기 활용</text>
+  
+  <!-- 4단계: 콘솔 탐색 -->
+  <rect x="50" y="380" width="700" height="80" rx="10" fill="#e1bee7" stroke="#8e24aa" stroke-width="2"/>
+  <text x="400" y="420" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#8e24aa">4단계: AWS Management Console 탐색</text>
+  <text x="400" y="445" font-family="Arial" font-size="14" text-anchor="middle" fill="#8e24aa">인터페이스 이해, 리전 선택, 기본 서비스 탐색</text>
+  
+  <!-- 5단계: CLI 및 SDK -->
+  <rect x="50" y="480" width="700" height="80" rx="10" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2"/>
+  <text x="400" y="520" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#d32f2f">5단계: AWS CLI 및 SDK 설치</text>
+  <text x="400" y="545" font-family="Arial" font-size="14" text-anchor="middle" fill="#d32f2f">CLI 설치, 구성 및 테스트, SDK 살펴보기</text>
+  
+  <!-- 아이콘 -->
+  <!-- 계정 아이콘 -->
+  <circle cx="80" cy="120" r="20" fill="#1976d2"/>
+  <text x="80" y="125" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+  
+  <!-- 보안 아이콘 -->
+  <circle cx="80" cy="220" r="20" fill="#388e3c"/>
+  <text x="80" y="225" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+  
+  <!-- 결제 아이콘 -->
+  <circle cx="80" cy="320" r="20" fill="#ffa000"/>
+  <text x="80" y="325" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+  
+  <!-- 콘솔 아이콘 -->
+  <circle cx="80" cy="420" r="20" fill="#8e24aa"/>
+  <text x="80" y="425" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">4</text>
+  
+  <!-- CLI 아이콘 -->
+  <circle cx="80" cy="520" r="20" fill="#d32f2f"/>
+  <text x="80" y="525" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">5</text>
+</svg>
