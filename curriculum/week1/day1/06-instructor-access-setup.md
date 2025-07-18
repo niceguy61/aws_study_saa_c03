@@ -338,4 +338,14 @@ d) 최소 권한 원칙 적용
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS IAM](https://docs.aws.amazon.com/iam/)
+- [IAM 역할](https://docs.aws.amazon.com/iam/latest/userguide/id_roles.html)
+- [IAM 모범 사례](https://docs.aws.amazon.com/iam/latest/userguide/best-practices.html)
+- [AWS CloudTrail](https://docs.aws.amazon.com/cloudtrail/)
+
+---
+
 > 💡 **오늘의 핵심**: AWS 클라우드의 기본 개념을 이해하고 실습 환경을 구축했습니다. 특히 공동 책임 모델을 통해 클라우드 보안의 기본 원칙을 배웠고, IAM 역할을 통한 안전한 접근 방법을 실습했습니다. 내일부터는 본격적인 AWS 서비스 학습이 시작됩니다!

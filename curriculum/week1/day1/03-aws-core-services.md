@@ -402,4 +402,17 @@ IoT 애플리케이션:
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [Amazon EC2](https://docs.aws.amazon.com/ec2/)
+- [AWS Lambda](https://docs.aws.amazon.com/lambda/)
+- [Amazon S3](https://docs.aws.amazon.com/s3/)
+- [Amazon VPC](https://docs.aws.amazon.com/vpc/)
+- [Amazon RDS](https://docs.aws.amazon.com/rds/)
+- [Amazon DynamoDB](https://docs.aws.amazon.com/dynamodb/)
+- [AWS 아키텍처 센터](https://aws.amazon.com/architecture/)
+
+---
+
 > 💡 **오늘의 핵심**: AWS는 다양한 서비스를 레고 블록처럼 조합하여 원하는 아키텍처를 구성할 수 있습니다. 각 서비스의 특성을 이해하고 비즈니스 요구사항에 맞게 조합하는 것이 솔루션 아키텍트의 핵심 역량입니다!

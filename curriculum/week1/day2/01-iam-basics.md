@@ -325,4 +325,15 @@ AWS 계정 (Root)
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS IAM](https://docs.aws.amazon.com/iam/)
+- [IAM 사용자](https://docs.aws.amazon.com/iam/latest/userguide/id_users.html)
+- [IAM 그룹](https://docs.aws.amazon.com/iam/latest/userguide/id_groups.html)
+- [IAM 역할](https://docs.aws.amazon.com/iam/latest/userguide/id_roles.html)
+- [IAM 모범 사례](https://docs.aws.amazon.com/iam/latest/userguide/best-practices.html)
+
+---
+
 > 💡 **오늘의 핵심**: IAM은 AWS 보안의 핵심입니다. 회사의 출입카드 시스템처럼 누가 어떤 리소스에 접근할 수 있는지를 체계적으로 관리하는 서비스입니다. 올바른 IAM 설계가 AWS 보안의 첫걸음입니다!

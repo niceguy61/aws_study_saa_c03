@@ -349,4 +349,15 @@ AWS: IAM 서비스 정상 작동 ✅
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS 공동 책임 모델](https://aws.amazon.com/compliance/shared-responsibility-model/)
+- [AWS 보안](https://aws.amazon.com/security/)
+- [AWS 보안 백서](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-category=categories%23security)
+- [AWS IAM](https://docs.aws.amazon.com/iam/)
+- [AWS CloudTrail](https://docs.aws.amazon.com/cloudtrail/)
+
+---
+
 > 💡 **오늘의 핵심**: 클라우드 보안은 AWS와 고객의 공동 책임입니다. AWS가 인프라를 안전하게 관리하더라도, 고객이 자신의 데이터와 애플리케이션을 보호하지 않으면 보안 사고가 발생할 수 있습니다!

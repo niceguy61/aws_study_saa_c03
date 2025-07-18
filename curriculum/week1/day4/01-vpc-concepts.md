@@ -448,4 +448,14 @@ Layer 3: 인스턴스 내부 방화벽
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [Amazon VPC](https://docs.aws.amazon.com/vpc/)
+- [VPC 및 서브넷](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)
+- [VPC 라우팅](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
+- [VPC 보안 그룹](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
+
+---
+
 > 💡 **오늘의 핵심**: VPC는 클라우드의 네트워크 기반입니다. 아파트 단지처럼 논리적으로 격리된 공간에서 서브넷으로 용도를 나누고, 라우팅 테이블로 트래픽 흐름을 제어합니다. CIDR 설계가 모든 것의 시작점입니다!

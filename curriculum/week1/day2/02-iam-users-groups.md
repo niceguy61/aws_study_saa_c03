@@ -363,4 +363,15 @@ Access Key 구성:
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [IAM 사용자 생성](https://docs.aws.amazon.com/iam/latest/userguide/id_users_create.html)
+- [IAM 그룹 관리](https://docs.aws.amazon.com/iam/latest/userguide/id_groups_manage.html)
+- [IAM 액세스 키](https://docs.aws.amazon.com/iam/latest/userguide/id_credentials_access-keys.html)
+- [MFA 설정](https://docs.aws.amazon.com/iam/latest/userguide/id_credentials_mfa_enable.html)
+- [IAM 모범 사례](https://docs.aws.amazon.com/iam/latest/userguide/best-practices.html)
+
+---
+
 > 💡 **오늘의 핵심**: IAM 사용자와 그룹을 통해 체계적인 권한 관리가 가능합니다. 루트 사용자는 응급상황에만 사용하고, 일상적인 작업은 적절한 권한을 가진 IAM 사용자로 수행하는 것이 보안의 기본입니다!

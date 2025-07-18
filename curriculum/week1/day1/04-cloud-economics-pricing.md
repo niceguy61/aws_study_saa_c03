@@ -439,4 +439,16 @@ Lambda 함수로 자동화:
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS 요금](https://aws.amazon.com/pricing/)
+- [EC2 요금](https://aws.amazon.com/ec2/pricing/)
+- [EC2 예약 인스턴스](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)
+- [EC2 스팟 인스턴스](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+- [AWS 요금 계산기](https://calculator.aws/)
+- [AWS 비용 관리](https://docs.aws.amazon.com/awsaccountbilling/)
+
+---
+
 > 💡 **오늘의 핵심**: AWS는 사용한 만큼만 지불하는 유연한 요금 체계를 제공합니다. 다양한 요금 모델을 이해하고 워크로드 특성에 맞게 선택하면 상당한 비용 절감이 가능합니다. 비용 최적화는 일회성이 아닌 지속적인 과정입니다!

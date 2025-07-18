@@ -236,4 +236,14 @@ Week 4: 집중 문제풀이
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS 클라우드란?](https://aws.amazon.com/what-is-aws/)
+- [클라우드 컴퓨팅](https://aws.amazon.com/what-is-cloud-computing/)
+- [AWS 경제성](https://aws.amazon.com/economics/)
+- [AWS 백서](https://aws.amazon.com/whitepapers/)
+
+---
+
 > 💡 **오늘의 핵심**: 클라우드는 선택이 아닌 필수! 하지만 무작정 도입하는 것이 아니라 비즈니스 요구사항에 맞는 전략적 접근이 중요합니다.

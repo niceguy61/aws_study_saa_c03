@@ -467,4 +467,14 @@ MFA 기반:
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [IAM 정책](https://docs.aws.amazon.com/iam/latest/userguide/access_policies.html)
+- [IAM JSON 정책 요소](https://docs.aws.amazon.com/iam/latest/userguide/reference_policies_elements.html)
+- [IAM 정책 예시](https://docs.aws.amazon.com/iam/latest/userguide/access_policies_examples.html)
+- [IAM 모범 사례](https://docs.aws.amazon.com/iam/latest/userguide/best-practices.html)
+
+---
+
 > 💡 **오늘의 핵심**: IAM 정책은 AWS 보안의 핵심입니다. JSON 형태의 정책 문서를 통해 세밀한 권한 제어가 가능하며, 최소 권한 원칙과 조건부 접근을 활용하여 보안을 강화할 수 있습니다!

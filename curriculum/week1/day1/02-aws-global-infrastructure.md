@@ -402,4 +402,14 @@ KMS: Security, Identity & Compliance → Key Management Service
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [AWS 글로벌 인프라](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [AWS 리전과 가용영역](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- [AWS 프리티어](https://aws.amazon.com/free/)
+- [AWS 비용 관리](https://docs.aws.amazon.com/awsaccountbilling/)
+
+---
+
 > 💡 **오늘의 핵심**: AWS는 전 세계에 분산된 인프라로 고가용성과 확장성을 제공합니다. 리전과 가용영역의 개념을 이해하는 것이 AWS 아키텍처 설계의 첫걸음입니다!

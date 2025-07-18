@@ -484,4 +484,15 @@ Internet Gateway (IGW)
 
 ---
 
+## 📖 참고 자료
+
+### AWS 공식 문서
+- [VPC 사용 설명서](https://docs.aws.amazon.com/vpc/latest/userguide/)
+- [VPC 생성](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html)
+- [서브넷 생성](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-subnets.html)
+- [라우팅 테이블](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
+- [인터넷 게이트웨이](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
+
+---
+
 > 💡 **오늘의 핵심**: VPC는 클라우드 네트워킹의 기초입니다. 체계적인 CIDR 설계와 용도별 서브넷 분리, 그리고 적절한 라우팅 설정이 안전하고 확장 가능한 네트워크의 핵심입니다!
