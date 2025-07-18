@@ -1,4 +1,4 @@
-# Day 1-4: 강사 접근 권한 설정 & 일일 정리
+# Day 1-6: 강사 접근 권한 설정 & 일일 정리
 
 ## 📚 학습 목표
 - 강사가 학생 계정에 접근할 수 있는 ReadOnlyAccess 역할 생성
@@ -9,6 +9,8 @@
 ---
 
 ## 🔐 강사 접근 권한 설정 (30분)
+
+![Instructor Access Setup](../images/instructor-access-setup.svg)
 
 ### 왜 ReadOnlyAccess 역할이 필요한가?
 

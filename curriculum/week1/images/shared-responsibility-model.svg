@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="awsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6600;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="customerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sharedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    AWS 공동 책임 모델
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">
+    Security OF the Cloud vs Security IN the Cloud
+  </text>
+  
+  <!-- AWS Responsibility -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="300" height="400" rx="10" fill="url(#awsGrad)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      🏢 AWS 책임 영역
+    </text>
+    <text x="150" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      "Security OF the Cloud"
+    </text>
+    
+    <!-- Physical Infrastructure -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6600">
+        물리적 인프라
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 데이터센터 보안 • 전력/냉각 시설 • 물리적 접근 통제
+      </text>
+    </g>
+    
+    <!-- Hardware -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6600">
+        하드웨어
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 서버 하드웨어 • 스토리지 디바이스 • 네트워크 장비
+      </text>
+    </g>
+    
+    <!-- Software -->
+    <g transform="translate(20, 190)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6600">
+        소프트웨어
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 하이퍼바이저 • 호스트 운영체제 • 서비스 소프트웨어
+      </text>
+    </g>
+    
+    <!-- Networking -->
+    <g transform="translate(20, 250)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6600">
+        네트워킹
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 네트워크 인프라 • 가용영역 분리 • 리전 간 연결
+      </text>
+    </g>
+    
+    <!-- Managed Services -->
+    <g transform="translate(20, 310)">
+      <rect x="0" y="0" width="260" height="70" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6600">
+        관리형 서비스
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • RDS, DynamoDB 패치 관리</text>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • Lambda 런타임 환경</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • S3 데이터 내구성 보장</text>
+    </g>
+  </g>
+  
+  <!-- Customer Responsibility -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="300" height="400" rx="10" fill="url(#customerGrad)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      👤 고객 책임 영역
+    </text>
+    <text x="150" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      "Security IN the Cloud"
+    </text>
+    
+    <!-- Data -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        데이터
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 데이터 분류 • 암호화 • 백업 • 데이터 보존 정책
+      </text>
+    </g>
+    
+    <!-- Identity & Access -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        자격 증명 및 액세스
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • IAM 정책 • MFA 설정 • 사용자 관리 • 권한 설정
+      </text>
+    </g>
+    
+    <!-- Applications -->
+    <g transform="translate(20, 190)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        애플리케이션
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 애플리케이션 보안 • 코드 보안 • 취약점 관리
+      </text>
+    </g>
+    
+    <!-- Operating System -->
+    <g transform="translate(20, 250)">
+      <rect x="0" y="0" width="260" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        운영체제 (EC2)
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • OS 패치 • 방화벽 설정 • 안티바이러스 • 보안 업데이트
+      </text>
+    </g>
+    
+    <!-- Network Configuration -->
+    <g transform="translate(20, 310)">
+      <rect x="0" y="0" width="260" height="70" rx="5" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        네트워크 구성
+      </text>
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 보안 그룹 설정</text>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • 네트워크 ACL 구성</text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        • VPC 설계 및 관리</text>
+    </g>
+  </g>
+  
+  <!-- Service-specific Examples -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="700" height="70" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+    <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+      서비스별 책임 분담 예시
+    </text>
+    
+    <g transform="translate(20, 35)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">EC2:</text>
+      <text x="40" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">AWS(하드웨어, 하이퍼바이저) + 고객(OS, 애플리케이션, 데이터)</text>
+      
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">RDS:</text>
+      <text x="40" y="30" font-family="Arial, sans-serif" font-size="11" fill="#666">AWS(OS, DB 소프트웨어, 패치) + 고객(데이터, 암호화, 네트워크 설정)</text>
+    </g>
+    
+    <g transform="translate(400, 35)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">S3:</text>
+      <text x="30" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">AWS(인프라, 내구성) + 고객(데이터, 암호화, 액세스 정책)</text>
+      
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Lambda:</text>
+      <text x="50" y="30" font-family="Arial, sans-serif" font-size="11" fill="#666">AWS(런타임, 인프라) + 고객(코드, IAM 권한)</text>
+    </g>
+  </g>
+  
+  <!-- Dividing line -->
+  <line x1="375" y1="100" x2="375" y2="500" stroke="#666" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="375" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">
+    책임 경계
+  </text>
+</svg>

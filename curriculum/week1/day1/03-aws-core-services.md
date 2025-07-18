@@ -10,6 +10,8 @@
 
 ## 🖥️ 컴퓨팅 서비스 (30분)
 
+![AWS Core Services](../images/aws-core-services.svg)
+
 ### EC2 (Elastic Compute Cloud) = 클라우드 컴퓨터
 
 #### EC2란?
@@ -76,6 +78,8 @@
 ## 💾 스토리지 서비스 (30분)
 
 ### S3 (Simple Storage Service) = 클라우드 창고
+
+![S3 Storage Classes](../images/s3-storage-classes.svg)
 
 #### S3란?
 ```

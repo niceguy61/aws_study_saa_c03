@@ -1,0 +1,136 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="onDemandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6600;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="reservedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="spotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    AWS EC2 요금 모델 비교
+  </text>
+  
+  <!-- On-Demand Instance -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="url(#onDemandGrad)" stroke="#FF6600" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      온디맨드 인스턴스
+    </text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🚕 택시
+    </text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 선불 결제 없음
+    </text>
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 언제든 시작/중지
+    </text>
+    <text x="20" y="120" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 가장 비싼 요금
+    </text>
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 예측 불가능한 워크로드
+    </text>
+  </g>
+  
+  <!-- Reserved Instance -->
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="url(#reservedGrad)" stroke="#2E7D32" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      예약 인스턴스
+    </text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🏠 월세 계약
+    </text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 1년/3년 약정
+    </text>
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 최대 60% 할인
+    </text>
+    <text x="20" y="120" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 안정적 워크로드
+    </text>
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 예측 가능한 사용량
+    </text>
+  </g>
+  
+  <!-- Spot Instance -->
+  <g transform="translate(550, 80)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="url(#spotGrad)" stroke="#1565C0" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      스팟 인스턴스
+    </text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🏷️ 경매
+    </text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 최대 90% 할인
+    </text>
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 언제든 중단 가능
+    </text>
+    <text x="20" y="120" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 배치 처리
+    </text>
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • 내결함성 애플리케이션
+    </text>
+  </g>
+  
+  <!-- Cost Comparison Chart -->
+  <g transform="translate(50, 280)">
+    <text x="350" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+      비용 비교 (t3.micro 기준)
+    </text>
+    
+    <!-- Chart bars -->
+    <rect x="50" y="50" width="150" height="40" fill="#FF9900" opacity="0.8"/>
+    <text x="10" y="75" font-family="Arial, sans-serif" font-size="14" fill="#333">온디맨드</text>
+    <text x="200" y="75" font-family="Arial, sans-serif" font-size="14" fill="#333">$91.13/년</text>
+    
+    <rect x="50" y="100" width="90" height="40" fill="#4CAF50" opacity="0.8"/>
+    <text x="10" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">예약(1년)</text>
+    <text x="200" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">$56.00/년</text>
+    
+    <rect x="50" y="150" width="60" height="40" fill="#4CAF50" opacity="0.8"/>
+    <text x="10" y="175" font-family="Arial, sans-serif" font-size="14" fill="#333">예약(3년)</text>
+    <text x="200" y="175" font-family="Arial, sans-serif" font-size="14" fill="#333">$37.00/년</text>
+    
+    <rect x="50" y="200" width="15" height="40" fill="#2196F3" opacity="0.8"/>
+    <text x="10" y="225" font-family="Arial, sans-serif" font-size="14" fill="#333">스팟</text>
+    <text x="200" y="225" font-family="Arial, sans-serif" font-size="14" fill="#333">$9.11/년</text>
+  </g>
+  
+  <!-- Usage Scenarios -->
+  <g transform="translate(400, 280)">
+    <text x="200" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+      사용 시나리오
+    </text>
+    
+    <rect x="0" y="40" width="400" height="60" rx="5" fill="#FFF3E0" stroke="#FF9900" stroke-width="1"/>
+    <text x="10" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">개발/테스트 환경</text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="12" fill="#333">• 예측 불가능한 사용 패턴 • 단기 프로젝트 • 즉시 시작/중지 필요</text>
+    
+    <rect x="0" y="110" width="400" height="60" rx="5" fill="#E8F5E8" stroke="#4CAF50" stroke-width="1"/>
+    <text x="10" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">운영 환경</text>
+    <text x="10" y="150" font-family="Arial, sans-serif" font-size="12" fill="#333">• 안정적인 워크로드 • 24/7 운영 • 예측 가능한 사용량</text>
+    
+    <rect x="0" y="180" width="400" height="60" rx="5" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+    <text x="10" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565C0">배치 처리</text>
+    <text x="10" y="220" font-family="Arial, sans-serif" font-size="12" fill="#333">• 중단 가능한 작업 • 빅데이터 분석 • CI/CD 파이프라인</text>
+  </g>
+</svg>

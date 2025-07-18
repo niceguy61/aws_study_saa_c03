@@ -1,0 +1,190 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="standardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glacierGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="deepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    S3 스토리지 클래스 및 수명 주기
+  </text>
+  
+  <!-- S3 Standard -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="url(#standardGrad)"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      S3 Standard
+    </text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🏃‍♂️ 자주 접근
+    </text>
+    
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="white">• $0.023/GB/월</text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="11" fill="white">• 즉시 접근</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="white">• 99.999999999% 내구성</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="11" fill="white">• 웹사이트, 앱 데이터</text>
+  </g>
+  
+  <!-- S3 Standard-IA -->
+  <g transform="translate(260, 80)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="url(#iaGrad)"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      S3 Standard-IA
+    </text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🚶‍♂️ 가끔 접근
+    </text>
+    
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="white">• $0.0125/GB/월</text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="11" fill="white">• 즉시 접근</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="white">• 검색 시 추가 요금</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="11" fill="white">• 백업, 재해 복구</text>
+  </g>
+  
+  <!-- S3 Glacier -->
+  <g transform="translate(470, 80)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="url(#glacierGrad)"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      S3 Glacier
+    </text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🐌 아카이브
+    </text>
+    
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="white">• $0.004/GB/월</text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="11" fill="white">• 1분~5시간 검색</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="white">• 장기 아카이브</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="11" fill="white">• 규정 준수 데이터</text>
+  </g>
+  
+  <!-- S3 Glacier Deep Archive -->
+  <g transform="translate(680, 80)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="url(#deepGrad)"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      S3 Glacier
+    </text>
+    <text x="90" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      Deep Archive
+    </text>
+    <text x="90" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🏔️ 장기 보관
+    </text>
+    
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="11" fill="white">• $0.00099/GB/월</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="white">• 12시간 검색</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="11" fill="white">• 7-10년 보관</text>
+  </g>
+  
+  <!-- Lifecycle Transition -->
+  <g transform="translate(50, 240)">
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+      수명 주기 정책 (Lifecycle Policy)
+    </text>
+    
+    <!-- Timeline -->
+    <line x1="50" y1="60" x2="750" y2="60" stroke="#666" stroke-width="3"/>
+    
+    <!-- Day markers -->
+    <g transform="translate(50, 40)">
+      <line x1="0" y1="20" x2="0" y2="40" stroke="#666" stroke-width="2"/>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Day 0</text>
+      <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4CAF50" font-weight="bold">Standard</text>
+    </g>
+    
+    <g transform="translate(200, 40)">
+      <line x1="0" y1="20" x2="0" y2="40" stroke="#666" stroke-width="2"/>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Day 30</text>
+      <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF9800" font-weight="bold">Standard-IA</text>
+    </g>
+    
+    <g transform="translate(400, 40)">
+      <line x1="0" y1="20" x2="0" y2="40" stroke="#666" stroke-width="2"/>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Day 90</text>
+      <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196F3" font-weight="bold">Glacier</text>
+    </g>
+    
+    <g transform="translate(600, 40)">
+      <line x1="0" y1="20" x2="0" y2="40" stroke="#666" stroke-width="2"/>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Day 365</text>
+      <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9C27B0" font-weight="bold">Deep Archive</text>
+    </g>
+    
+    <!-- Arrows -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+      </marker>
+    </defs>
+    
+    <line x1="80" y1="60" x2="170" y2="60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="230" y1="60" x2="370" y2="60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="430" y1="60" x2="570" y2="60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Cost Comparison -->
+  <g transform="translate(50, 360)">
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+      비용 비교 (1TB 데이터 1년 보관)
+    </text>
+    
+    <!-- Cost bars -->
+    <g transform="translate(100, 40)">
+      <rect x="0" y="0" width="200" height="30" fill="#4CAF50" opacity="0.8"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Standard만 사용</text>
+      <text x="220" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333">$276/년</text>
+    </g>
+    
+    <g transform="translate(100, 80)">
+      <rect x="0" y="0" width="120" height="30" fill="#FF9800" opacity="0.8"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">수명주기 적용</text>
+      <text x="140" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333">$156/년 (43% 절약)</text>
+    </g>
+    
+    <g transform="translate(100, 120)">
+      <rect x="0" y="0" width="30" height="30" fill="#9C27B0" opacity="0.8"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Deep Archive</text>
+      <text x="50" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333">$12/년 (96% 절약)</text>
+    </g>
+  </g>
+  
+  <!-- Use Cases -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="800" height="60" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+      실제 사용 사례
+    </text>
+    
+    <g transform="translate(20, 30)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Standard:</text>
+      <text x="70" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">웹사이트 이미지, 동영상, 자주 접근하는 파일</text>
+      
+      <text x="350" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Standard-IA:</text>
+      <text x="440" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">백업 파일, 재해 복구 데이터</text>
+    </g>
+    
+    <g transform="translate(20, 45)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Glacier:</text>
+      <text x="60" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">로그 아카이브, 규정 준수 데이터</text>
+      
+      <text x="350" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Deep Archive:</text>
+      <text x="450" y="15" font-family="Arial, sans-serif" font-size="11" fill="#666">장기 보관 데이터, 의료 기록</text>
+    </g>
+  </g>
+</svg>

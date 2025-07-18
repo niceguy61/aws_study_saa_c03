@@ -1,0 +1,253 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vpcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="publicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E6C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="privateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFECB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE082;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFCDD2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF9A9A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    CIDR 블록과 서브넷 분할
+  </text>
+  
+  <!-- CIDR Explanation -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="80" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+      CIDR 표기법 이해
+    </text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">
+      10.0.0.0/16 = IP주소/서브넷마스크 → 앞의 16비트는 네트워크 부분, 나머지 16비트는 호스트 부분
+    </text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="14" fill="#333">
+      사용 가능한 IP 개수: 2^(32-16) = 2^16 = 65,536개 (실제로는 AWS 예약 IP 5개 제외)
+    </text>
+  </g>
+  
+  <!-- VPC Container -->
+  <g transform="translate(50, 160)">
+    <rect x="0" y="0" width="800" height="420" rx="15" fill="url(#vpcGrad)" stroke="#1976D2" stroke-width="3"/>
+    <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1976D2">
+      VPC: 10.0.0.0/16 (65,536개 IP)
+    </text>
+    
+    <!-- Subnet Division Explanation -->
+    <g transform="translate(20, 50)">
+      <text x="380" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+        서브넷 분할 전략: /16을 /24로 분할 (각 서브넷당 256개 IP)
+      </text>
+    </g>
+    
+    <!-- AZ-A Column -->
+    <g transform="translate(50, 80)">
+      <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">
+        가용영역 A
+      </text>
+      
+      <!-- Public Subnet A -->
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#publicGrad)" stroke="#4CAF50" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+          퍼블릭 서브넷 A
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+          10.0.1.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.1.0 ~ 10.0.1.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- Private Subnet A -->
+      <g transform="translate(0, 110)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#privateGrad)" stroke="#FF9800" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+          프라이빗 서브넷 A
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+          10.0.11.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.11.0 ~ 10.0.11.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- DB Subnet A -->
+      <g transform="translate(0, 190)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#dbGrad)" stroke="#F44336" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+          DB 서브넷 A
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+          10.0.21.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.21.0 ~ 10.0.21.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+    </g>
+    
+    <!-- AZ-B Column -->
+    <g transform="translate(300, 80)">
+      <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">
+        가용영역 B
+      </text>
+      
+      <!-- Public Subnet B -->
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#publicGrad)" stroke="#4CAF50" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+          퍼블릭 서브넷 B
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+          10.0.2.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.2.0 ~ 10.0.2.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- Private Subnet B -->
+      <g transform="translate(0, 110)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#privateGrad)" stroke="#FF9800" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+          프라이빗 서브넷 B
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+          10.0.12.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.12.0 ~ 10.0.12.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- DB Subnet B -->
+      <g transform="translate(0, 190)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#dbGrad)" stroke="#F44336" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+          DB 서브넷 B
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+          10.0.22.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.22.0 ~ 10.0.22.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+    </g>
+    
+    <!-- AZ-C Column -->
+    <g transform="translate(550, 80)">
+      <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">
+        가용영역 C
+      </text>
+      
+      <!-- Public Subnet C -->
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#publicGrad)" stroke="#4CAF50" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+          퍼블릭 서브넷 C
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+          10.0.3.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.3.0 ~ 10.0.3.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- Private Subnet C -->
+      <g transform="translate(0, 110)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#privateGrad)" stroke="#FF9800" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+          프라이빗 서브넷 C
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+          10.0.13.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.13.0 ~ 10.0.13.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+      
+      <!-- DB Subnet C -->
+      <g transform="translate(0, 190)">
+        <rect x="0" y="0" width="200" height="70" rx="8" fill="url(#dbGrad)" stroke="#F44336" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+          DB 서브넷 C
+        </text>
+        <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+          10.0.23.0/24
+        </text>
+        <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          10.0.23.0 ~ 10.0.23.255
+        </text>
+        <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          사용 가능: 251개 IP
+        </text>
+      </g>
+    </g>
+    
+    <!-- Reserved Space -->
+    <g transform="translate(50, 290)">
+      <rect x="0" y="0" width="700" height="50" rx="8" fill="#F5F5F5" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="350" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666">
+        예약된 IP 대역 (향후 확장용)
+      </text>
+      <text x="350" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+        10.0.4.0/24 ~ 10.0.255.0/24 (252개 서브넷 추가 가능)
+      </text>
+    </g>
+  </g>
+  
+  <!-- AWS Reserved IPs -->
+  <g transform="translate(50, 600)">
+    <rect x="0" y="0" width="800" height="40" rx="5" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+      ⚠️ AWS 예약 IP (각 서브넷마다 5개 IP 예약)
+    </text>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      예: 10.0.1.0/24에서 10.0.1.0(네트워크), 10.0.1.1(VPC 라우터), 10.0.1.2(DNS), 10.0.1.3(미래용), 10.0.1.255(브로드캐스트) 예약
+    </text>
+  </g>
+</svg>

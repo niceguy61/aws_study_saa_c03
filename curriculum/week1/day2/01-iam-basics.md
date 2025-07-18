@@ -10,6 +10,8 @@
 
 ## 🏢 IAM = 회사 출입카드 시스템 (30분)
 
+![IAM Components](../images/iam-components.svg)
+
 ### IAM이란?
 ```
 Identity and Access Management

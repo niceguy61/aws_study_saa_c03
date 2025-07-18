@@ -10,6 +10,8 @@
 
 ## 💰 AWS 요금 체계 기본 원리 (30분)
 
+![AWS Pricing Models](../images/aws-pricing-models.svg)
+
 ### Pay-as-you-go = 사용한 만큼만 지불
 
 #### 전통적 IT vs 클라우드 비용 구조

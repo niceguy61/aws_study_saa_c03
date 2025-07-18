@@ -70,6 +70,8 @@ Virtual MFA 앱:
 
 ## 👤 첫 번째 IAM 사용자 생성 (45분)
 
+![IAM User Group Relationship](../images/iam-user-group-relationship.svg)
+
 ### 관리자 사용자 생성
 
 #### 왜 관리자 사용자가 필요한가?

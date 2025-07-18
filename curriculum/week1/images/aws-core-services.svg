@@ -1,0 +1,363 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="computeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="storageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="networkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="databaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    AWS 핵심 서비스 = 레고 블록
+  </text>
+  
+  <!-- Compute Services -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#computeGrad)" opacity="0.9"/>
+    <text x="90" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      🖥️ 컴퓨팅
+    </text>
+    
+    <!-- EC2 -->
+    <g transform="translate(15, 50)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F57C00">
+        EC2
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        가상 서버
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 클라우드 컴퓨터 대여
+      </text>
+    </g>
+    
+    <!-- Lambda -->
+    <g transform="translate(15, 120)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F57C00">
+        Lambda
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        서버리스 함수
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 코드만 실행, 서버 관리 없음
+      </text>
+    </g>
+    
+    <!-- ECS/EKS -->
+    <g transform="translate(15, 190)">
+      <rect x="0" y="0" width="150" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F57C00">
+        ECS/EKS
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        컨테이너 오케스트레이션
+      </text>
+    </g>
+  </g>
+  
+  <!-- Storage Services -->
+  <g transform="translate(270, 80)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#storageGrad)" opacity="0.9"/>
+    <text x="90" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      💾 스토리지
+    </text>
+    
+    <!-- S3 -->
+    <g transform="translate(15, 50)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        S3
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        객체 스토리지
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 무제한 클라우드 창고
+      </text>
+    </g>
+    
+    <!-- EBS -->
+    <g transform="translate(15, 120)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        EBS
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        블록 스토리지
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • EC2용 외장 하드디스크
+      </text>
+    </g>
+    
+    <!-- EFS -->
+    <g transform="translate(15, 190)">
+      <rect x="0" y="0" width="150" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        EFS
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        파일 시스템
+      </text>
+    </g>
+  </g>
+  
+  <!-- Network Services -->
+  <g transform="translate(490, 80)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#networkGrad)" opacity="0.9"/>
+    <text x="90" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      🌐 네트워킹
+    </text>
+    
+    <!-- VPC -->
+    <g transform="translate(15, 50)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565C0">
+        VPC
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        가상 사설망
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 클라우드 내 독립 네트워크
+      </text>
+    </g>
+    
+    <!-- CloudFront -->
+    <g transform="translate(15, 120)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565C0">
+        CloudFront
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        CDN
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 전 세계 빠른 콘텐츠 배포
+      </text>
+    </g>
+    
+    <!-- Route 53 -->
+    <g transform="translate(15, 190)">
+      <rect x="0" y="0" width="150" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565C0">
+        Route 53
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        DNS 서비스
+      </text>
+    </g>
+  </g>
+  
+  <!-- Database Services -->
+  <g transform="translate(710, 80)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#databaseGrad)" opacity="0.9"/>
+    <text x="90" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      🗄️ 데이터베이스
+    </text>
+    
+    <!-- RDS -->
+    <g transform="translate(15, 50)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+        RDS
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        관계형 DB
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • MySQL, PostgreSQL 등
+      </text>
+    </g>
+    
+    <!-- DynamoDB -->
+    <g transform="translate(15, 120)">
+      <rect x="0" y="0" width="150" height="60" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+        DynamoDB
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        NoSQL DB
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#666">
+        • 서버리스 NoSQL
+      </text>
+    </g>
+    
+    <!-- ElastiCache -->
+    <g transform="translate(15, 190)">
+      <rect x="0" y="0" width="150" height="50" rx="5" fill="white" opacity="0.9"/>
+      <text x="75" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+        ElastiCache
+      </text>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+        인메모리 캐시
+      </text>
+    </g>
+  </g>
+  
+  <!-- Architecture Examples -->
+  <g transform="translate(50, 360)">
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+      서비스 조합 예시
+    </text>
+    
+    <!-- 3-Tier Architecture -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="800" height="120" rx="10" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+        전통적인 3-Tier 웹 애플리케이션
+      </text>
+      
+      <!-- Web Tier -->
+      <g transform="translate(50, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#4CAF50" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+          프레젠테이션 계층
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          CloudFront + S3
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          Route 53
+        </text>
+      </g>
+      
+      <!-- App Tier -->
+      <g transform="translate(200, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#FF9800" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F57C00">
+          애플리케이션 계층
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          ALB + EC2
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          Auto Scaling
+        </text>
+      </g>
+      
+      <!-- DB Tier -->
+      <g transform="translate(350, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#9C27B0" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+          데이터 계층
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          RDS + ElastiCache
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          S3 (파일 저장)
+        </text>
+      </g>
+      
+      <!-- Arrows -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+        </marker>
+      </defs>
+      <line x1="170" y1="70" x2="200" y2="70" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <line x1="320" y1="70" x2="350" y2="70" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Benefits -->
+      <g transform="translate(500, 40)">
+        <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">장점:</text>
+        <text x="0" y="30" font-family="Arial, sans-serif" font-size="10" fill="#666">• 확장성</text>
+        <text x="0" y="45" font-family="Arial, sans-serif" font-size="10" fill="#666">• 고가용성</text>
+        <text x="0" y="60" font-family="Arial, sans-serif" font-size="10" fill="#666">• 관리 용이성</text>
+      </g>
+    </g>
+    
+    <!-- Serverless Architecture -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="800" height="120" rx="10" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565C0">
+        현대적인 서버리스 애플리케이션
+      </text>
+      
+      <!-- Frontend -->
+      <g transform="translate(50, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#2196F3" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">
+          프론트엔드
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          S3 + CloudFront
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          정적 웹사이트
+        </text>
+      </g>
+      
+      <!-- Backend -->
+      <g transform="translate(200, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#FF9800" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F57C00">
+          백엔드
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          API Gateway
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          Lambda 함수
+        </text>
+      </g>
+      
+      <!-- Database -->
+      <g transform="translate(350, 40)">
+        <rect x="0" y="0" width="120" height="60" rx="5" fill="white" stroke="#9C27B0" stroke-width="2"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+          데이터베이스
+        </text>
+        <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          DynamoDB
+        </text>
+        <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+          서버리스 NoSQL
+        </text>
+      </g>
+      
+      <!-- Arrows -->
+      <line x1="170" y1="70" x2="200" y2="70" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <line x1="320" y1="70" x2="350" y2="70" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Benefits -->
+      <g transform="translate(500, 40)">
+        <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">장점:</text>
+        <text x="0" y="30" font-family="Arial, sans-serif" font-size="10" fill="#666">• 서버 관리 없음</text>
+        <text x="0" y="45" font-family="Arial, sans-serif" font-size="10" fill="#666">• 자동 확장</text>
+        <text x="0" y="60" font-family="Arial, sans-serif" font-size="10" fill="#666">• 사용량 기반 과금</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Key Principle -->
+  <g transform="translate(50, 640)">
+    <rect x="0" y="0" width="800" height="40" rx="5" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+      🔑 핵심 원칙: 레고 블록처럼 서비스를 조합하여 원하는 아키텍처 구성
+    </text>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      각 서비스의 특성을 이해하고 비즈니스 요구사항에 맞게 조합하는 것이 솔루션 아키텍트의 핵심 역량
+    </text>
+  </g>
+</svg>

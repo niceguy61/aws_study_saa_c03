@@ -10,6 +10,8 @@
 
 ## 🏢 VPC = 아파트 단지 (30분)
 
+![VPC Architecture](../images/vpc-architecture.svg)
+
 ### VPC란 무엇인가?
 
 #### 전통적인 네트워크 vs VPC
@@ -81,6 +83,8 @@ VPC = 아파트 단지 전체
 ---
 
 ## 🌐 CIDR 블록과 IP 주소 체계 (45분)
+
+![CIDR Subnetting](../images/cidr-subnetting.svg)
 
 ### CIDR (Classless Inter-Domain Routing) 이해
 
@@ -258,6 +262,8 @@ AZ-c (ap-northeast-2c):
 ---
 
 ## 🛣️ 라우팅 테이블 이해 (30분)
+
+![Routing Table Flow](../images/routing-table-flow.svg)
 
 ### 라우팅 테이블 = 도로 안내판
 

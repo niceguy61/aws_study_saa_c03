@@ -10,6 +10,8 @@
 
 ## 🌍 AWS 글로벌 인프라 (45분)
 
+![AWS Global Infrastructure](../images/aws-global-infrastructure.svg)
+
 ### AWS 인프라 = 전국 체인점 네트워크
 
 #### 리전 (Region) = 지역 본부

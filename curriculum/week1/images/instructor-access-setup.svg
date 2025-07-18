@@ -1,0 +1,165 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="studentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="instructorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    강사 접근 권한 설정 가이드
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">
+    Cross-Account Role을 통한 안전한 접근
+  </text>
+  
+  <!-- Student Account -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="300" height="200" rx="15" fill="url(#studentGrad)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      🎓 학생 AWS 계정
+    </text>
+    <text x="150" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      계정 ID: 123456789012
+    </text>
+    
+    <!-- Student Resources -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="260" height="100" rx="8" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        학생이 생성한 리소스
+      </text>
+      
+      <g transform="translate(20, 30)">
+        <rect x="0" y="0" width="60" height="25" rx="3" fill="#E8F5E8" stroke="#4CAF50"/>
+        <text x="30" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">EC2</text>
+        
+        <rect x="70" y="0" width="60" height="25" rx="3" fill="#E8F5E8" stroke="#4CAF50"/>
+        <text x="100" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">S3</text>
+        
+        <rect x="140" y="0" width="60" height="25" rx="3" fill="#E8F5E8" stroke="#4CAF50"/>
+        <text x="170" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">RDS</text>
+        
+        <rect x="0" y="35" width="60" height="25" rx="3" fill="#E8F5E8" stroke="#4CAF50"/>
+        <text x="30" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">VPC</text>
+        
+        <rect x="70" y="35" width="60" height="25" rx="3" fill="#E8F5E8" stroke="#4CAF50"/>
+        <text x="100" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">Lambda</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Cross-Account Role -->
+  <g transform="translate(250, 320)">
+    <rect x="0" y="0" width="300" height="120" rx="10" fill="url(#roleGrad)" opacity="0.9"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      🎭 교차 계정 역할
+    </text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      InstructorReadOnlyRole
+    </text>
+    
+    <g transform="translate(20, 55)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" fill="white">• 정책: ReadOnlyAccess</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="11" fill="white">• 신뢰 관계: 강사 계정만 허용</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="11" fill="white">• 외부 ID: 수업별 고유 코드</text>
+    </g>
+  </g>
+  
+  <!-- Instructor Account -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="300" height="200" rx="15" fill="url(#instructorGrad)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      👨‍🏫 강사 AWS 계정
+    </text>
+    <text x="150" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      계정 ID: 987654321098
+    </text>
+    
+    <!-- Instructor Actions -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="260" height="100" rx="8" fill="white" opacity="0.9"/>
+      <text x="130" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565C0">
+        강사가 할 수 있는 작업
+      </text>
+      
+      <g transform="translate(20, 30)">
+        <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" fill="#333">✅ 모든 리소스 조회</text>
+        <text x="0" y="30" font-family="Arial, sans-serif" font-size="11" fill="#333">✅ 아키텍처 검토</text>
+        <text x="0" y="45" font-family="Arial, sans-serif" font-size="11" fill="#333">✅ 비용 분석</text>
+        <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#333">❌ 리소스 생성/수정/삭제</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Setup Steps -->
+  <g transform="translate(50, 460)">
+    <rect x="0" y="0" width="700" height="120" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+    <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565C0">
+      설정 단계
+    </text>
+    
+    <g transform="translate(20, 40)">
+      <circle cx="15" cy="15" r="12" fill="#2196F3"/>
+      <text x="15" y="19" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">1</text>
+      <text x="35" y="19" font-family="Arial, sans-serif" font-size="12" fill="#333">학생: IAM 역할 생성 (InstructorReadOnlyRole)</text>
+      
+      <circle cx="15" cy="35" r="12" fill="#2196F3"/>
+      <text x="15" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">2</text>
+      <text x="35" y="39" font-family="Arial, sans-serif" font-size="12" fill="#333">학생: ReadOnlyAccess 정책 연결</text>
+      
+      <circle cx="15" cy="55" r="12" fill="#2196F3"/>
+      <text x="15" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">3</text>
+      <text x="35" y="59" font-family="Arial, sans-serif" font-size="12" fill="#333">학생: 신뢰 관계 설정 (강사 계정 ID + 외부 ID)</text>
+      
+      <circle cx="15" cy="75" r="12" fill="#2196F3"/>
+      <text x="15" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">4</text>
+      <text x="35" y="79" font-family="Arial, sans-serif" font-size="12" fill="#333">학생: 역할 ARN을 강사에게 전달</text>
+    </g>
+    
+    <g transform="translate(380, 40)">
+      <circle cx="15" cy="15" r="12" fill="#FF9800"/>
+      <text x="15" y="19" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">5</text>
+      <text x="35" y="19" font-family="Arial, sans-serif" font-size="12" fill="#333">강사: Switch Role 사용</text>
+      
+      <circle cx="15" cy="35" r="12" fill="#FF9800"/>
+      <text x="15" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">6</text>
+      <text x="35" y="39" font-family="Arial, sans-serif" font-size="12" fill="#333">강사: 학생 계정 접근</text>
+      
+      <circle cx="15" cy="55" r="12" fill="#FF9800"/>
+      <text x="15" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">7</text>
+      <text x="35" y="59" font-family="Arial, sans-serif" font-size="12" fill="#333">강사: 과제 검토 및 피드백</text>
+      
+      <circle cx="15" cy="75" r="12" fill="#FF9800"/>
+      <text x="15" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">8</text>
+      <text x="35" y="79" font-family="Arial, sans-serif" font-size="12" fill="#333">강사: 원래 계정으로 복귀</text>
+    </g>
+  </g>
+  
+  <!-- Connection arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Student to Role -->
+  <line x1="350" y1="280" x2="400" y2="320" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="375" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">생성</text>
+  
+  <!-- Role to Instructor -->
+  <line x1="550" y1="380" x2="600" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="575" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">접근</text>
+</svg>

@@ -1,0 +1,205 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="publicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E6C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="privateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFECB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE082;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="internetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    라우팅 테이블과 트래픽 흐름
+  </text>
+  
+  <!-- Internet -->
+  <g transform="translate(350, 60)">
+    <ellipse cx="100" cy="30" rx="80" ry="20" fill="url(#internetGrad)"/>
+    <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🌐 인터넷
+    </text>
+  </g>
+  
+  <!-- Internet Gateway -->
+  <g transform="translate(400, 120)">
+    <rect x="0" y="0" width="100" height="40" rx="5" fill="#4CAF50"/>
+    <text x="50" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      IGW
+    </text>
+  </g>
+  
+  <!-- VPC Container -->
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="800" height="450" rx="15" fill="#E3F2FD" stroke="#1976D2" stroke-width="3" opacity="0.3"/>
+    <text x="400" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976D2">
+      VPC: 10.0.0.0/16
+    </text>
+    
+    <!-- Public Subnet -->
+    <g transform="translate(50, 50)">
+      <rect x="0" y="0" width="300" height="150" rx="10" fill="url(#publicGrad)" stroke="#4CAF50" stroke-width="2"/>
+      <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+        퍼블릭 서브넷 (10.0.1.0/24)
+      </text>
+      
+      <!-- Web Server -->
+      <g transform="translate(50, 50)">
+        <rect x="0" y="0" width="80" height="60" rx="5" fill="white" stroke="#4CAF50" stroke-width="2"/>
+        <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+          웹서버
+        </text>
+        <text x="40" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+          10.0.1.10
+        </text>
+      </g>
+      
+      <!-- Load Balancer -->
+      <g transform="translate(170, 50)">
+        <rect x="0" y="0" width="80" height="60" rx="5" fill="white" stroke="#4CAF50" stroke-width="2"/>
+        <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+          로드밸런서
+        </text>
+        <text x="40" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+          10.0.1.20
+        </text>
+      </g>
+    </g>
+    
+    <!-- Private Subnet -->
+    <g transform="translate(450, 50)">
+      <rect x="0" y="0" width="300" height="150" rx="10" fill="url(#privateGrad)" stroke="#FF9800" stroke-width="2"/>
+      <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+        프라이빗 서브넷 (10.0.11.0/24)
+      </text>
+      
+      <!-- App Server -->
+      <g transform="translate(50, 50)">
+        <rect x="0" y="0" width="80" height="60" rx="5" fill="white" stroke="#FF9800" stroke-width="2"/>
+        <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+          앱서버
+        </text>
+        <text x="40" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+          10.0.11.10
+        </text>
+      </g>
+      
+      <!-- Database -->
+      <g transform="translate(170, 50)">
+        <rect x="0" y="0" width="80" height="60" rx="5" fill="white" stroke="#FF9800" stroke-width="2"/>
+        <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+          데이터베이스
+        </text>
+        <text x="40" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+          10.0.11.20
+        </text>
+      </g>
+    </g>
+    
+    <!-- NAT Gateway -->
+    <g transform="translate(100, 220)">
+      <rect x="0" y="0" width="100" height="40" rx="5" fill="#FF9800"/>
+      <text x="50" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        NAT Gateway
+      </text>
+    </g>
+    
+    <!-- Route Tables -->
+    <g transform="translate(50, 280)">
+      <text x="350" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+        라우팅 테이블
+      </text>
+      
+      <!-- Public Route Table -->
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="300" height="100" rx="8" fill="white" stroke="#4CAF50" stroke-width="2"/>
+        <text x="150" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+          퍼블릭 라우팅 테이블
+        </text>
+        
+        <g transform="translate(20, 30)">
+          <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Destination</text>
+          <text x="120" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Target</text>
+          
+          <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#666">10.0.0.0/16</text>
+          <text x="120" y="35" font-family="Arial, sans-serif" font-size="10" fill="#666">local</text>
+          
+          <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#666">0.0.0.0/0</text>
+          <text x="120" y="50" font-family="Arial, sans-serif" font-size="10" fill="#666">igw-12345</text>
+        </g>
+      </g>
+      
+      <!-- Private Route Table -->
+      <g transform="translate(400, 40)">
+        <rect x="0" y="0" width="300" height="100" rx="8" fill="white" stroke="#FF9800" stroke-width="2"/>
+        <text x="150" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+          프라이빗 라우팅 테이블
+        </text>
+        
+        <g transform="translate(20, 30)">
+          <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Destination</text>
+          <text x="120" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Target</text>
+          
+          <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#666">10.0.0.0/16</text>
+          <text x="120" y="35" font-family="Arial, sans-serif" font-size="10" fill="#666">local</text>
+          
+          <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#666">0.0.0.0/0</text>
+          <text x="120" y="50" font-family="Arial, sans-serif" font-size="10" fill="#666">nat-67890</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Traffic Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E91E63" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+    </marker>
+  </defs>
+  
+  <!-- Inbound Traffic Flow -->
+  <g>
+    <!-- Internet to IGW -->
+    <line x1="450" y1="110" x2="450" y2="120" stroke="#E91E63" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="470" y="115" font-family="Arial, sans-serif" font-size="10" fill="#E91E63" font-weight="bold">인바운드</text>
+    
+    <!-- IGW to Public Subnet -->
+    <line x1="450" y1="160" x2="250" y2="250" stroke="#E91E63" stroke-width="3" marker-end="url(#arrowhead)"/>
+    
+    <!-- Public to Private -->
+    <line x1="350" y1="320" x2="500" y2="320" stroke="#E91E63" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Outbound Traffic Flow -->
+  <g>
+    <!-- Private to NAT -->
+    <line x1="500" y1="350" x2="200" y2="440" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+    <text x="350" y="395" font-family="Arial, sans-serif" font-size="10" fill="#2196F3" font-weight="bold">아웃바운드</text>
+    
+    <!-- NAT to IGW -->
+    <line x1="200" y1="420" x2="450" y2="160" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 670)">
+    <rect x="0" y="0" width="800" height="25" rx="5" fill="#F5F5F5" stroke="#999" stroke-width="1"/>
+    
+    <line x1="20" y1="12" x2="40" y2="12" stroke="#E91E63" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="50" y="16" font-family="Arial, sans-serif" font-size="12" fill="#333">인바운드 트래픽: 인터넷 → IGW → 퍼블릭 서브넷 → 프라이빗 서브넷</text>
+    
+    <line x1="450" y1="12" x2="470" y2="12" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+    <text x="480" y="16" font-family="Arial, sans-serif" font-size="12" fill="#333">아웃바운드 트래픽: 프라이빗 서브넷 → NAT → IGW → 인터넷</text>
+  </g>
+</svg>
