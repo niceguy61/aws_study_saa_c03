@@ -6,6 +6,7 @@
 - AWS IAM을 활용한 보안 액세스 관리 방법 습득
 - VPC를 설계하고 네트워크 보안을 구성하는 방법 학습
 - AWS의 데이터 보안 및 암호화 서비스 활용 방법 이해
+- AWS Solutions Architect Associate 자격증 시험 등록 방법 학습
 
 ## 주간 일정
 
@@ -33,10 +34,11 @@
 - [네트워크 보안 기초 및 하이브리드 네트워킹](./day4/network_security.md)
 - [실습: VPC 설계 및 구성](./day4/lab_vpc_design_configuration.md)
 
-### 금요일: 데이터 보안 및 암호화
+### 금요일: 데이터 보안 및 암호화, AWS 자격증 시험 등록
 - [AWS 데이터 보안 개요](./day5/data_security_overview.md)
 - [저장 데이터 및 전송 중 데이터 암호화](./day5/data_encryption.md)
 - [보안 모니터링, 감사 및 규정 준수](./day5/security_monitoring.md)
+- [AWS Solutions Architect Associate 자격증 소개 및 시험 등록 방법](./day5/aws_certification_guide.md)
 - [실습: 데이터 암호화 및 보안 구성](./day5/lab_data_encryption.md)
 - [주간 복습 및 퀴즈](./day5/weekly_review.md)
 
@@ -49,3 +51,4 @@
 - [AWS 공식 문서: IAM 사용 설명서](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 - [AWS 공식 문서: Amazon VPC 사용 설명서](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [AWS 공식 문서: AWS KMS 개발자 가이드](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+- [AWS 자격증 시험 안내](https://aws.amazon.com/certification/certified-solutions-architect-associate/)

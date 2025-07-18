@@ -1,13 +1,14 @@
 # 주간 과제: AWS 계정 설정 및 보안 강화
 
 ## 개요
-이 과제에서는 AWS 계정의 기본 보안 설정을 구성하고, 루트 계정 보호, IAM 사용자 생성, MFA 설정 등 AWS 계정 사용을 위한 필수적인 보안 조치를 적용합니다. 또한 강사의 계정에 ReadOnlyAccess 권한을 부여하여 아키텍처 점검 및 비상시 가이드라인 제공을 위한 환경을 구성합니다.
+이 과제에서는 AWS 계정의 기본 보안 설정을 구성하고, 루트 계정 보호, IAM 사용자 생성, MFA 설정 등 AWS 계정 사용을 위한 필수적인 보안 조치를 적용합니다. 또한 강사의 계정에 ReadOnlyAccess 권한을 부여하여 아키텍처 점검 및 비상시 가이드라인 제공을 위한 환경을 구성합니다. 마지막으로 AWS Solutions Architect Associate 자격증 시험을 등록합니다.
 
 ## 학습 목표
 - AWS 계정의 기본 보안 설정 방법 습득
 - 루트 계정 보호 및 MFA 설정 방법 이해
 - IAM 사용자 생성 및 관리자 권한 부여 방법 학습
 - 교차 계정 액세스를 위한 IAM 역할 구성 방법 습득
+- AWS 자격증 시험 등록 방법 이해
 
 ## 요구 사항
 
@@ -53,6 +54,13 @@
 - AWS Trusted Advisor 기본 보안 점검 실행 (가능한 경우)
 - 발견된 보안 문제 해결
 
+### 7. AWS Solutions Architect Associate 자격증 시험 등록
+- AWS Certification 웹사이트에서 계정 생성
+- AWS Solutions Architect Associate(SAA-C03) 시험 등록
+- 시험 일정 및 장소 선택 (온라인 또는 테스트 센터)
+- 시험 등록 확인 이메일 저장
+- 시험 등록 확인 스크린샷 캡처
+
 ## 제출 요구 사항
 
 ### 1. GitHub 저장소에 문서화
@@ -71,6 +79,7 @@
 - IAM 보안 권장 사항 점검 결과
 - 발견된 보안 문제 및 해결 방법
 - 추가 보안 개선 권장 사항
+- AWS 자격증 시험 등록 확인 스크린샷 (개인 식별 정보는 가리기)
 
 ## 교차 계정 액세스 역할 생성 가이드
 
@@ -107,6 +116,30 @@
 - 역할 ARN 복사 (형식: arn:aws:iam::123456789012:role/InstructorReadOnlyRole)
 - 강사에게 역할 ARN 제공 (GitHub 저장소의 README.md 또는 별도 문서에 기록)
 
+## AWS 자격증 시험 등록 가이드
+
+### 1. AWS Certification 계정 생성
+- [AWS Certification 웹사이트](https://www.aws.training/certification)에 접속
+- "AWS 계정으로 로그인" 또는 "새 계정 생성" 선택
+- 필요한 정보 입력하여 계정 생성
+
+### 2. 시험 등록
+- 로그인 후 "시험 예약" 선택
+- "AWS Certified Solutions Architect - Associate" 시험 선택
+- 시험 언어 선택 (한국어 또는 영어)
+- 시험 방식 선택 (온라인 감독 또는 테스트 센터)
+
+### 3. 일정 및 결제
+- 시험 일정 선택 (날짜 및 시간)
+- 개인 정보 확인 및 업데이트
+- 결제 정보 입력 및 시험 비용 결제
+- 시험 등록 확인 및 영수증 저장
+
+### 4. 시험 준비
+- 시험 확인 이메일 확인
+- 시험 당일 필요한 신분증 준비
+- 온라인 감독 시험의 경우 시스템 요구 사항 확인 및 테스트
+
 ## 강사의 역할 수임 방법 안내
 
 강사가 여러분의 계정에 접근하기 위해 다음 단계를 수행합니다:
@@ -136,6 +169,7 @@
 - IAM 보안 권장 사항 적용
 - 최소 권한 원칙 적용
 - 보안 상태 모니터링 구성
+- AWS 자격증 시험 등록 완료
 - 모든 과정 문서화 및 GitHub 저장소에 업로드
 
 ## 보너스 과제 (선택 사항)
@@ -162,6 +196,7 @@
 - [교차 계정 액세스 가이드](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)
 - [AWS 보안 모범 사례](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [GitHub 저장소 생성 및 팀원 초대 가이드](https://docs.github.com/ko/repositories/creating-and-managing-repositories/creating-a-new-repository)
+- [AWS 자격증 시험 등록 가이드](https://aws.amazon.com/certification/certification-prep/)
 
 ## 제출 마감일
 2주차 월요일 오전 9시까지 GitHub 저장소 URL을 제출하세요.
