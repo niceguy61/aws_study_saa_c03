@@ -19,6 +19,7 @@
 
 ### 월요일: 클라우드 컴퓨팅 기초 및 AWS 소개
 - [과정 오리엔테이션](./day1/orientation.md) - 과정 소개 및 학습 방법 안내
+- [전통적인 웹서비스 구조 이해](./day1/traditional_web_services.md) - "왜 클라우드가 필요한지" 먼저 알아보기
 - [클라우드 컴퓨팅 개념 및 발전 과정](./day1/cloud_computing_basics.md)
 - [클라우드 서비스 모델 및 배포 모델](./day1/cloud_service_models.md)
 - [AWS 소개 및 주요 서비스 개요](./day1/aws_introduction.md)
@@ -53,10 +54,18 @@
 ## 주간 과제
 - [AWS 계정 설정 및 보안 강화](./assignments/aws_account_security.md)
 
+## 학습 도구
+- [1주차 용어집](./glossary.md) - 모르는 용어가 나오면 여기서 찾아보세요!
+
 ## 참고 자료
-- [AWS 공식 문서: AWS 클라우드 개요](https://aws.amazon.com/ko/what-is-aws/)
+- [AWS 공식 문서: AWS 클라우드 개요](https://aws.amazon.com/ko/what-is-aws/) - 한국어로 되어 있어서 읽기 좋아요
 - [AWS 공식 문서: AWS 보안 모범 사례](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
 - [AWS 공식 문서: IAM 사용 설명서](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 - [AWS 공식 문서: Amazon VPC 사용 설명서](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [AWS 공식 문서: AWS KMS 개발자 가이드](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 - [AWS 자격증 시험 안내](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+
+## 💬 도움이 필요하시면
+- **모르는 용어**: [1주차 용어집](./glossary.md)에서 찾아보세요
+- **이해가 안 되는 부분**: 언제든지 질문하세요
+- **진도를 따라가기 어려운 경우**: 개별 상담 가능합니다
