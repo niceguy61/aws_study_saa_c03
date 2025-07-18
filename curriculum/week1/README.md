@@ -43,9 +43,6 @@
 ## 주간 과제
 - [AWS 계정 설정 및 보안 강화](./assignments/aws_account_security.md)
 
-## 주간 챌린지
-- [다중 계정 환경에서 교차 계정 액세스 구현](./challenges/cross_account_access.md)
-
 ## 참고 자료
 - [AWS 공식 문서: AWS 클라우드 개요](https://aws.amazon.com/ko/what-is-aws/)
 - [AWS 공식 문서: AWS 보안 모범 사례](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
