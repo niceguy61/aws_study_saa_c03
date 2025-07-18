@@ -1,51 +1,118 @@
-# 2주차: 복원력을 갖춘 아키텍처 설계
+# 2주차: 복원력 + 고성능 아키텍처 설계
 
-## 학습 목표
-- 고가용성 및 내결함성 설계 원칙 이해
-- 확장 가능한 아키텍처 설계 방법 습득
-- AWS의 다양한 컴퓨팅 서비스 활용 방법 학습
-- 서버리스 아키텍처 및 컨테이너 기술 이해
-- 재해 복구 전략 수립 방법 습득
+## 📚 학습 개요
 
-## 주간 일정
+이제 AWS 클라우드의 진짜 힘을 경험할 시간입니다! 마치 고성능 스포츠카의 엔진을 들여다보는 것처럼, AWS의 핵심 컴퓨팅과 스토리지 서비스들을 깊이 있게 탐구하겠습니다. 장애에도 끄떡없고, 성능도 뛰어난 시스템을 만드는 비법을 배워보세요.
 
-### 월요일: 고가용성 설계 원칙 및 EC2 기초
-- [고가용성 설계 원칙](./day1/high_availability_principles.md)
-- [EC2 기초 및 인스턴스 유형](./day1/ec2_basics.md)
-- [실습: EC2 인스턴스 배포 및 관리](./day1/lab_ec2_deployment.md)
+## 🎯 학습 목표
 
-### 화요일: Auto Scaling 및 로드 밸런싱
-- [Auto Scaling 개념 및 구성](./day2/auto_scaling.md)
-- [Elastic Load Balancing 서비스](./day2/elastic_load_balancing.md)
-- [실습: Auto Scaling 그룹 및 로드 밸런서 구성](./day2/lab_auto_scaling_elb.md)
+### 핵심 목표
+- 확장 가능하고 복원력 있는 컴퓨팅 아키텍처 설계
+- 고성능 스토리지 및 데이터베이스 솔루션 구축
+- 서버리스와 컨테이너 기술의 적절한 활용
+- 네트워크 성능 최적화 및 글로벌 배포 전략
 
-### 수요일: 서버리스 아키텍처
-- [서버리스 컴퓨팅 개념](./day3/serverless_computing.md)
-- [AWS Lambda 및 API Gateway](./day3/lambda_api_gateway.md)
-- [실습: 서버리스 API 구축](./day3/lab_serverless_api.md)
+### 시험 연계 (SAA-C03 도메인 2,3: 복원력 26% + 고성능 24% = 50%)
+- 확장 가능하고 느슨하게 결합된 아키텍처 설계
+- 고가용성 및 내결함성 아키텍처 설계
+- 고성능 컴퓨팅, 스토리지, 데이터베이스, 네트워크 솔루션
 
-### 목요일: 컨테이너 서비스
-- [컨테이너 기술 개요](./day4/container_overview.md)
-- [Amazon ECS 및 EKS](./day4/ecs_eks.md)
-- [실습: 컨테이너 배포 및 관리](./day4/lab_container_deployment.md)
+## 📅 일별 학습 계획
 
-### 금요일: 재해 복구 전략 및 백업 솔루션
-- [재해 복구 전략 및 설계](./day5/disaster_recovery.md)
-- [AWS 백업 서비스](./day5/aws_backup_services.md)
-- [실습: 재해 복구 계획 수립 및 백업 구성](./day5/lab_dr_backup.md)
-- [주간 복습 및 퀴즈](./day5/weekly_review.md)
+| 일차 | 주제 | 핵심 내용 | 실습 |
+|------|------|---------|------|
+| **1일** | EC2 & Auto Scaling | 인스턴스 유형, 배치 그룹, Auto Scaling 전략 | EC2 최적화, ASG 구성 |
+| **2일** | 서버리스 & 컨테이너 | Lambda, ECS, EKS, Fargate | 서버리스 앱 구축, 컨테이너 배포 |
+| **3일** | 스토리지 최적화 | EBS, EFS, S3 성능 튜닝, 스토리지 클래스 | 고성능 스토리지 구성 |
+| **4일** | 데이터베이스 성능 | RDS, DynamoDB, ElastiCache, 읽기 복제본 | DB 성능 최적화 |
+| **5일** | 네트워크 & CDN | CloudFront, Global Accelerator, 로드밸런서 | 글로벌 배포 아키텍처 |
 
-## 주간 과제
-- [고가용성 웹 애플리케이션 배포](./assignments/ha_web_app_deployment.md)
+## 🏗️ 주요 학습 내용
 
-## 주간 챌린지
-- [멀티 리전 재해 복구 솔루션](./challenges/multi_region_dr.md)
+### EC2 & Auto Scaling
+- **인스턴스 패밀리**: 각 워크로드에 최적화된 인스턴스 선택
+- **배치 그룹**: 클러스터, 파티션, 스프레드 전략
+- **Auto Scaling**: 예측적 스케일링과 동적 스케일링
 
-## 참고 자료
-- [AWS 공식 문서: 고가용성 아키텍처](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-architecture.html)
-- [AWS 공식 문서: EC2 사용 설명서](https://docs.aws.amazon.com/ec2/index.html)
-- [AWS 공식 문서: Auto Scaling 사용 설명서](https://docs.aws.amazon.com/autoscaling/index.html)
-- [AWS 공식 문서: Elastic Load Balancing 사용 설명서](https://docs.aws.amazon.com/elasticloadbalancing/index.html)
-- [AWS 공식 문서: Lambda 개발자 안내서](https://docs.aws.amazon.com/lambda/index.html)
-- [AWS 공식 문서: ECS 개발자 안내서](https://docs.aws.amazon.com/ecs/index.html)
-- [AWS 공식 문서: 재해 복구 백서](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html)
+### 서버리스 & 컨테이너
+- **Lambda**: 이벤트 기반 컴퓨팅의 활용
+- **컨테이너 서비스**: ECS vs EKS vs Fargate 비교
+- **서버리스 패턴**: API Gateway + Lambda + DynamoDB
+
+### 스토리지 최적화
+- **EBS 최적화**: IOPS, 처리량, 볼륨 유형별 특성
+- **S3 성능**: 멀티파트 업로드, Transfer Acceleration
+- **하이브리드 스토리지**: Storage Gateway 활용
+
+### 데이터베이스 성능
+- **RDS 최적화**: 읽기 복제본, Multi-AZ, 성능 인사이트
+- **DynamoDB**: 파티션 키 설계, GSI/LSI 활용
+- **캐싱 전략**: ElastiCache를 통한 성능 향상
+
+### 네트워크 & CDN
+- **CloudFront**: 글로벌 콘텐츠 배포 최적화
+- **로드 밸런서**: ALB, NLB, GLB 특성과 활용
+- **Global Accelerator**: 네트워크 성능 가속화
+
+## 📝 과제 및 평가
+
+### 주간 과제: "글로벌 미디어 스트리밍 플랫폼 구축"
+실제 OTT 서비스와 같은 대규모 미디어 플랫폼의 아키텍처를 설계하고 구현하는 과제입니다.
+
+**시나리오**: 
+"StreamCloud"라는 새로운 OTT 서비스가 전 세계 사용자를 대상으로 서비스를 시작합니다. 수백만 명의 동시 사용자, 4K 비디오 스트리밍, 개인화된 추천 시스템을 지원해야 합니다.
+
+**요구사항**:
+- 전 세계 어디서나 빠른 비디오 재생
+- 트래픽 급증 시 자동 확장
+- 99.99% 가용성 보장
+- 비용 효율적인 스토리지 전략
+
+### 평가 기준
+- 아키텍처 확장성 (30%)
+- 성능 최적화 설계 (30%)
+- 고가용성 구현 (25%)
+- 비용 효율성 (15%)
+
+## 🔧 실습 환경
+
+### 이번 주 실습 특징
+- **대용량 처리**: 실제 워크로드 시뮬레이션
+- **성능 측정**: CloudWatch 메트릭 활용
+- **부하 테스트**: 간단한 부하 생성 도구 활용
+- **비용 모니터링**: 실시간 비용 추적
+
+### 주의사항
+- 일부 실습은 프리티어 한도를 초과할 수 있습니다
+- 실습 후 리소스 정리를 반드시 수행하세요
+- 비용 알림을 설정하여 예상치 못한 요금을 방지하세요
+
+## 📚 참고 자료
+
+- [AWS Well-Architected Framework - 성능 효율성](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/)
+- [AWS Well-Architected Framework - 안정성](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/)
+- [Amazon EC2 인스턴스 유형](https://aws.amazon.com/ec2/instance-types/)
+- [AWS Auto Scaling 사용자 가이드](https://docs.aws.amazon.com/autoscaling/)
+
+## 💡 학습 팁
+
+1. **성능 지표 이해**: 지연 시간, 처리량, IOPS 등의 개념을 명확히 하세요
+2. **실제 워크로드 고려**: 이론적 최적화보다 실제 사용 패턴을 고려한 설계를 하세요
+3. **비용과 성능의 균형**: 무조건 고성능보다는 비용 대비 효과를 고려하세요
+4. **모니터링 습관**: 성능 최적화는 지속적인 모니터링과 튜닝이 필요합니다
+
+## 🚀 이번 주 하이라이트
+
+### 실전 시나리오 기반 학습
+- **Netflix 아키텍처 분석**: 실제 글로벌 OTT 서비스의 AWS 활용 사례
+- **Airbnb 확장 전략**: 급성장하는 서비스의 인프라 확장 경험
+- **Spotify 추천 시스템**: 머신러닝과 빅데이터 처리 아키텍처
+
+### 성능 최적화 실습
+- **부하 테스트**: Apache Bench를 활용한 간단한 성능 테스트
+- **모니터링 대시보드**: CloudWatch 커스텀 대시보드 구성
+- **알람 설정**: 성능 임계값 기반 자동 알림 시스템
+
+---
+
+> 🚀 **이번 주 목표**: 확장 가능하고 고성능인 클라우드 아키텍처 설계의 달인이 되자!

@@ -1,71 +1,85 @@
 # 1주차: 클라우드 기초 및 보안 아키텍처 설계
 
-## 학습 목표
-- 클라우드 컴퓨팅의 기본 개념과 이점 이해
-- AWS 글로벌 인프라의 구성 요소와 특징 파악
-- AWS IAM을 활용한 보안 액세스 관리 방법 습득
-- VPC를 설계하고 네트워크 보안을 구성하는 방법 학습
-- AWS의 데이터 보안 및 암호화 서비스 활용 방법 이해
-- AWS Solutions Architect Associate 자격증 시험 등록 방법 학습
+## 📚 학습 개요
 
-## 오리엔테이션
-- [과정 오리엔테이션 자료](./day1/orientation.md) - 전체 과정 소개 및 학습 방법 안내
+AWS 클라우드의 세계에 첫 발을 내딛는 주간입니다! 마치 새로운 도시에 이사를 온 것처럼, 클라우드라는 새로운 환경의 기본 구조와 보안 체계를 차근차근 알아보겠습니다.
 
-## 주간 시간표
-- [1주차 상세 시간표](./timetable.md) - 매일 09:00-18:00 수업 일정 및 세부 시간 계획
-- [과정 오리엔테이션](./day1/orientation.md) - 과정 소개 및 학습 가이드
+## 🎯 학습 목표
 
-## 주간 일정
+### 핵심 목표
+- 클라우드 컴퓨팅의 기본 개념과 AWS 글로벌 인프라 이해
+- AWS 보안의 핵심인 IAM(Identity and Access Management) 완전 정복
+- 안전한 네트워크 환경 구축을 위한 VPC 설계 능력 습득
+- 다중 계정 전략과 보안 모범 사례 적용
 
-### 월요일: 클라우드 컴퓨팅 기초 및 AWS 소개
-- [과정 오리엔테이션](./day1/orientation.md) - 과정 소개 및 학습 방법 안내
-- [전통적인 웹서비스 구조 이해](./day1/traditional_web_services.md) - "왜 클라우드가 필요한지" 먼저 알아보기
-- [클라우드 컴퓨팅 개념 및 발전 과정](./day1/cloud_computing_basics.md)
-- [클라우드 서비스 모델 및 배포 모델](./day1/cloud_service_models.md)
-- [AWS 소개 및 주요 서비스 개요](./day1/aws_introduction.md)
-- [실습: AWS 계정 생성 및 기본 설정](./day1/lab_aws_account_setup.md)
+### 시험 연계 (SAA-C03 도메인 1: 보안 아키텍처 설계 30%)
+- AWS 리소스에 대한 보안 액세스 설계
+- 안전한 워크로드 및 애플리케이션 설계  
+- 적합한 데이터 보안 제어 결정
 
-### 화요일: AWS 글로벌 인프라 및 IAM 기초
-- [AWS 글로벌 인프라 개요](./day2/aws_global_infrastructure.md)
-- [AWS 공동 책임 모델](./day2/aws_shared_responsibility.md)
-- [IAM 개요 및 기본 개념](./day2/iam_basics.md)
-- [실습: IAM 사용자 및 그룹 관리](./day2/lab_iam_users_groups.md)
+## 📅 일별 학습 계획
 
-### 수요일: IAM 심화 및 다중 계정 전략
-- [IAM 역할 및 임시 자격 증명](./day3/iam_roles_credentials.md)
-- [다중 계정 관리 전략 및 AWS Organizations](./day3/multi_account_strategy.md)
-- [ID 페더레이션 및 AWS SSO](./day3/identity_federation.md)
-- [실습: IAM 역할 및 정책 구성](./day3/lab_iam_roles_policies.md)
+| 일차 | 주제 | 핵심 내용 | 실습 |
+|------|------|---------|------|
+| **1일** | 클라우드 기초 & AWS 소개 | 클라우드 컴퓨팅 개념, AWS 글로벌 인프라, 공동 책임 모델 | AWS 계정 생성, 콘솔 탐색 |
+| **2일** | IAM 기초 | 사용자, 그룹, 역할, 정책의 개념과 관계 | IAM 사용자/그룹 생성, MFA 설정 |
+| **3일** | IAM 고급 & 다중 계정 | 교차 계정 액세스, STS, Organizations | 역할 전환, 교차 계정 실습 |
+| **4일** | VPC 기초 | 가상 네트워크 개념, 서브넷, 라우팅 | VPC 생성, 퍼블릭/프라이빗 서브넷 구성 |
+| **5일** | VPC 보안 & 종합 정리 | 보안 그룹, NACL, VPC 엔드포인트 | 보안 아키텍처 구현, 주간 과제 |
 
-### 목요일: VPC 및 네트워크 보안
-- [VPC 개념 및 설계 원칙](./day4/vpc_concepts.md)
-- [서브넷, 라우팅 및 VPC 연결 옵션](./day4/vpc_networking.md)
-- [네트워크 보안 기초 및 하이브리드 네트워킹](./day4/network_security.md)
-- [실습: VPC 설계 및 구성](./day4/lab_vpc_design_configuration.md)
+## 🏗️ 주요 학습 내용
 
-### 금요일: 데이터 보안 및 암호화, AWS 자격증 시험 등록
-- [AWS 데이터 보안 개요](./day5/data_security_overview.md)
-- [저장 데이터 및 전송 중 데이터 암호화](./day5/data_encryption.md)
-- [보안 모니터링, 감사 및 규정 준수](./day5/security_monitoring.md)
-- [AWS Solutions Architect Associate 자격증 소개 및 시험 등록 방법](./day5/aws_certification_guide.md)
-- [실습: 데이터 암호화 및 보안 구성](./day5/lab_data_encryption.md)
-- [주간 복습 및 퀴즈](./day5/weekly_review.md)
+### 클라우드 컴퓨팅 기초
+- **전통적 IT vs 클라우드**: 마치 자가용 vs 택시의 차이
+- **AWS 글로벌 인프라**: 전 세계에 펼쳐진 AWS의 데이터센터 네트워크
+- **공동 책임 모델**: AWS와 고객 간의 보안 책임 분담
 
-## 주간 과제
-- [AWS 계정 설정 및 보안 강화](./assignments/aws_account_security.md)
+### IAM (Identity and Access Management)
+- **사용자와 그룹**: 회사의 직원과 부서 조직과 같은 개념
+- **역할(Role)**: 임시로 권한을 빌려주는 시스템
+- **정책(Policy)**: 누가 무엇을 할 수 있는지 정의하는 규칙서
 
-## 학습 도구
-- [1주차 용어집](./glossary.md) - 모르는 용어가 나오면 여기서 찾아보세요!
+### VPC (Virtual Private Cloud)
+- **가상 네트워크**: 클라우드 상의 나만의 네트워크 공간
+- **서브넷**: 네트워크를 용도별로 나누는 방법
+- **보안 그룹**: 서버 앞의 보안 담당자 같은 역할
 
-## 참고 자료
-- [AWS 공식 문서: AWS 클라우드 개요](https://aws.amazon.com/ko/what-is-aws/) - 한국어로 되어 있어서 읽기 좋아요
-- [AWS 공식 문서: AWS 보안 모범 사례](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
-- [AWS 공식 문서: IAM 사용 설명서](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
-- [AWS 공식 문서: Amazon VPC 사용 설명서](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
-- [AWS 공식 문서: AWS KMS 개발자 가이드](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
-- [AWS 자격증 시험 안내](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+## 📝 과제 및 평가
 
-## 💬 도움이 필요하시면
-- **모르는 용어**: [1주차 용어집](./glossary.md)에서 찾아보세요
-- **이해가 안 되는 부분**: 언제든지 질문하세요
-- **진도를 따라가기 어려운 경우**: 개별 상담 가능합니다
+### 주간 과제: "안전한 웹 서비스 환경 구축"
+실제 스타트업이 웹 서비스를 런칭한다고 가정하고, 보안이 강화된 3-tier 아키텍처를 구축하는 과제입니다.
+
+**시나리오**: 
+온라인 쇼핑몰을 운영하는 스타트업 "클라우드마켓"이 AWS로 인프라를 이전하려고 합니다. 개발팀, 운영팀, 보안팀이 각각 다른 권한을 가져야 하며, 고객 데이터 보호가 최우선입니다.
+
+### 평가 기준
+- VPC 설계의 적절성 (30%)
+- IAM 권한 설계의 보안성 (40%)
+- 실습 완성도 (30%)
+
+## 🔧 실습 환경 준비
+
+### 필수 준비사항
+1. AWS 계정 생성 (프리티어 활용)
+2. AWS CLI 설치 및 구성
+3. 실습용 리전: ap-northeast-2 (서울)
+
+### 강사 접근 권한 설정
+과제 평가를 위해 강사가 여러분의 AWS 리소스를 확인할 수 있도록 ReadOnlyAccess 역할을 생성하고 부여하는 방법을 학습합니다.
+
+## 📚 참고 자료
+
+- [AWS 공동 책임 모델](https://aws.amazon.com/compliance/shared-responsibility-model/)
+- [IAM 모범 사례](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [VPC 사용자 가이드](https://docs.aws.amazon.com/vpc/latest/userguide/)
+
+## 💡 학습 팁
+
+1. **개념을 일상에 비유해서 이해하기**: IAM은 회사의 출입카드 시스템, VPC는 아파트 단지라고 생각해보세요
+2. **실습 위주로 학습**: 이론만으로는 부족합니다. 직접 만져보면서 익히세요
+3. **보안 우선 사고**: 모든 설정에서 "이게 안전한가?"를 먼저 생각하는 습관을 기르세요
+4. **문서화 습관**: 실습한 내용을 정리하면서 나만의 치트시트를 만들어보세요
+
+---
+
+> 💪 **이번 주 목표**: AWS 클라우드의 기본기를 탄탄히 다지고, 보안 아키텍처 설계의 기초를 완성하자!
