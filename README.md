@@ -92,6 +92,11 @@
 - 강사가 아키텍처 검토 및 가이드라인 제공을 위해 AWS 리소스에 접근할 수 있도록 ReadOnlyAccess 역할을 부여하는 방법이 각 과제에 포함되어 있습니다.
 - 과제와 챌린지를 통해 실제 업무 환경과 유사한 시나리오를 경험하고 문제 해결 능력을 키울 수 있습니다.
 
+## 연락처 정보
+- **강사 이메일**: niceguy61@naver.com
+- **카카오톡 오픈채팅**: [niceguy61](https://open.kakao.com/me/niceguy61)
+- **GitHub 저장소**: [repository-link](https://github.com/niceguy61)
+
 ---
 
 <p align="center">
