@@ -72,7 +72,9 @@ Amazon VPC(Virtual Private Cloud)를 효과적으로 설계하고 구현하기 �
 - **다중 NAT 게이트웨이**: 각 가용 영역에 별도의 NAT 게이트웨이 배포
 - **다중 VPN 연결**: 중복 VPN 터널 구성
 - **Direct Connect 중복성**: 여러 위치 또는 여러 서비스 제공업체를 통한 Direct Connect 연결
-- **Transit Gateway 활용**: 중앙 집중식 네트워크 허브로 Transit Gateway 활용### 확장성 모범 사례
+- **Transit Gateway 활용**: 중앙 집중식 네트워크 허브로 Transit Gateway 활용
+
+### 확장성 모범 사례
 
 #### 네트워크 설계
 - **모듈식 설계**: 독립적으로 확장 가능한 구성 요소로 설계
